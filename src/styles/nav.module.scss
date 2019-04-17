@@ -1,0 +1,16 @@
+@import 'vars';
+
+.nav {
+	align-items: stretch;
+	background-color: #fff;
+	display: flex;
+	height: $navh;
+	justify-content: center;
+	position: fixed;
+	width: 100vw;
+	z-index: 10;
+}
+.logo {
+	height: $navh - 2vh;
+	margin-top: 1vh;
+}
