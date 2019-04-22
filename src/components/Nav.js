@@ -1,19 +1,27 @@
 import React from 'react';
 import { Link } from 'gatsby';
+import { navigate } from '@reach/router';
 
 import logo from '../images/bsuen-logo.svg';
-//import NavLink from './NavLink';
 
 import styles from '../styles/nav.module.scss';
 
 const Nav = () => (
 	<div className={styles.nav}>
 		<Link to='/'>
-			<a>
-				<img alt='Image of Brandon Suen' className={styles.logo} src={logo} />
-			</a>
+			<img alt='Brandon Suen' className={styles.logo} src={logo} />
 		</Link>
-		{/*<NavLink name='Apps' route='/apps' />*/}
+		<div className={styles.textLinks}>
+			{/*<Link className={styles.link} to='/about'>
+				About
+			</Link>*/}
+			<Link className={styles.link} to='/projects'>
+				Projects
+			</Link>
+			<button className={styles.button} onClick={() => navigate('/#contact')}>
+				Contact
+			</button>
+		</div>
 	</div>
 );
 

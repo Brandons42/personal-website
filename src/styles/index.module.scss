@@ -2,62 +2,44 @@
 
 $fixh: 55vh;
 
-%body {
-	font-family: $mont;
-	font-size: 18px;
-	line-height: 30px;
-}
-
-%header {
-	font-family: $roboto;
-	font-size: 8vmin;
-	font-weight: bold;
-	margin-bottom: 4vh;
-	text-align: center;
-}
-
 .blue {
-	background-color: $blue;
-	padding: 5vh 10vw;
-}
-
-.blue h2 {
-	@extend %header;
-	color: #ffffff;
-}
-
-.blue p {
-	@extend %body;
-	color: #ffffff;
-}
-
-.carouselImage {
-	height: $fixh;
+	@extend %blue;
 }
 
 .banner {
-	background-position: right top;
-	background-position-x: 100%;
+	background-position: 70% 0%;
+	background-position-x: 70%;
 	background-position-y: 0%;
 	background-size: cover;
 	display: flex;
 	height: $fixh;
-	top: $navh;
+	position: fixed;
 	width: 100vw;
 	z-index: -1;
 }
 
+.captcha {
+	display: inline-block;
+}
+
+.center {
+	text-align: center;
+}
+
 .content {
-	margin-top: $fixh + $navh;
-	position: absolute;
-	top: 0;
+	margin-top: $fixh;
 }
 
 .desc {
-	color: white;
+	color: #ffffff;
 	font-family: $mont;
 	font-size: 3vmin;
 	margin-top: 1.5vh;
+}
+
+.email {
+	display: block;
+	margin-top: 3vh;
 }
 
 .gradient {
@@ -66,41 +48,19 @@ $fixh: 55vh;
 	width: 10vw;
 }
 
-.initial {
-	align-items: center;
-	animation-delay: 1.5s;
-	animation-duration: 0.5s;
-	animation-fill-mode: forwards;
-	animation-name: fade;
-	background-color: $blue;
-	display: flex;
-	height: 100vh;
-	justify-content: center;
-	position: fixed;
-	width: 100vw;
-}
-
-.initialText {
-	@extend %header;
-	animation-delay: 1.5s;
-	animation-duration: 0.5s;
-	animation-fill-mode: forwards;
-	animation-name: fade;
-	color: white;
-	text-align: center;
-	width: 60vw;
-}
 .logo {
 	display: block;
 	margin: 0 auto;
 	width: 35vmin;
 }
+
 .title {
 	color: #ffffff;
 	font-family: $roboto;
 	font-size: 10vmin;
 	font-weight: bold;
 }
+
 .titleContainer {
 	background: linear-gradient(to right, $blue, $semitparent);
 	display: flex;
@@ -110,36 +70,9 @@ $fixh: 55vh;
 	padding-left: 5vw;
 	max-width: 50vw;
 }
+
 .white {
-	background-color: #ffffff;
-	padding: 5vh 10vw;
-
-	h2 {
-		@extend %header;
-		color: $black;
-	}
-
-	h3 {
-		margin-top: 3vh;
-		color: $black;
-		font-family: $roboto;
-		font-size: 40px;
-	}
-
-	@mixin description {
-		@extend %body;
-		color: $black;
-	}
-
-	a > p,
-	i {
-		@include description;
-		line-height: 5vh;
-	}
-
-	p {
-		@include description;
-	}
+	@extend %white;
 }
 
 @keyframes fade {
@@ -153,8 +86,18 @@ $fixh: 55vh;
 	}
 }
 
-@media (max-width: 576px) {
-	.fixed {
-		background-position: center;
+@media (max-width: 500px) {
+	.desc {
+		font-size: 4vmin;
+	}
+
+	.title {
+		font-size: 11vmin;
+	}
+}
+
+@media (max-width: 375px) {
+	.captcha {
+		margin-left: -8vw;
 	}
 }

@@ -1,16 +1,54 @@
 @import 'vars';
 
+.button {
+	@extend %body-text;
+	background-color: $blue;
+	border: none;
+	border-radius: 15px;
+	color: #ffffff;
+	margin: 0 3vw;
+	padding: 1vh 2vw;
+}
+
+.link {
+	@extend %body-text;
+	color: $blue;
+	margin: 0 3vw;
+}
+
+.logo {
+	align-self: stretch;
+	height: $navh - 5vh;
+	margin-top: 1vh;
+}
+
 .nav {
-	align-items: stretch;
+	align-items: center;
 	background-color: #fff;
 	display: flex;
+	flex-wrap: wrap;
 	height: $navh;
-	justify-content: center;
+	justify-content: space-between;
+	padding: 0 10vw;
 	position: fixed;
 	width: 100vw;
 	z-index: 10;
 }
-.logo {
-	height: $navh - 2vh;
-	margin-top: 1vh;
+
+.textLinks {
+	align-items: center;
+	display: flex;
+	flex-wrap: nowrap;
+}
+
+@media (max-width: 700px) {
+	.logo,
+	.textLinks {
+		margin-bottom: 3vh;
+	}
+
+	.nav {
+		flex-direction: column;
+		height: auto;
+	}
 }

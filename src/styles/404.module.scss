@@ -1,0 +1,17 @@
+@import 'vars';
+
+%text {
+	color: $black;
+	margin: 10vh 0;
+	text-align: center;
+}
+
+.body {
+	@extend %body-text;
+	@extend %text;
+}
+
+.header {
+	@extend %header;
+	@extend %text;
+}

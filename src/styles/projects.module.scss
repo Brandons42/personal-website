@@ -1,0 +1,11 @@
+@import 'vars';
+
+.container > div {
+	&:nth-child(even) {
+		@extend %blue;
+	}
+
+	&:nth-child(odd) {
+		@extend %white;
+	}
+}

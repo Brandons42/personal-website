@@ -13,9 +13,50 @@ $navh: 15vh;
 %body-text {
 	font-family: $mont;
 	font-size: 18px;
+	line-height: 30px;
 }
 
 %header {
 	font-family: $roboto;
 	font-size: 60px;
+}
+
+%container {
+	padding: 5vh 10vw;
+
+	h2 {
+		@extend %header;
+		padding: 2vh 0 4vh;
+		text-align: center;
+	}
+
+	h3 {
+		margin-top: 3vh;
+		font-family: $roboto;
+		font-size: 40px;
+	}
+
+	a,
+	i,
+	p {
+		@extend %body-text;
+	}
+}
+
+%blue {
+	@extend %container;
+	background-color: $blue;
+
+	* {
+		color: #ffffff;
+	}
+}
+
+%white {
+	@extend %container;
+	background-color: #ffffff;
+
+	* {
+		color: $black;
+	}
 }

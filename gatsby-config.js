@@ -1,3 +1,5 @@
+require('dotenv').config({ path: `.env.${process.env.NODE_ENV}` });
+
 module.exports = {
 	siteMetadata: {
 		title: `Brandon Suen's Personal Website`,
@@ -13,21 +15,28 @@ module.exports = {
 				path: `${__dirname}/src/images`
 			}
 		},
-    `gatsby-transformer-sharp`,
-    `gatsby-plugin-favicon`,
+		`gatsby-transformer-sharp`,
+		`gatsby-plugin-favicon`,
 		`gatsby-plugin-sass`,
-		`gatsby-plugin-sharp`,
 		{
+			resolve: `gatsby-plugin-sharp`,
+			options: { defaultQuality: 80 }
+		},
+		/*{
 			resolve: `gatsby-plugin-manifest`,
 			options: {
-				name: `gatsby-starter-default`,
-				short_name: `starter`,
+				name: `Brandon Suen's Personal Website`,
+				short_name: `B. Suen`,
 				start_url: `/`,
-				background_color: `#663399`,
-				theme_color: `#663399`,
+				background_color: `#ffffff`,
+				theme_color: `#26377c`,
 				display: `minimal-ui`,
 				icon: `src/images/gatsby-icon.png`
 			}
+		},*/
+		{
+			resolve: `gatsby-plugin-google-analytics`,
+			options: { trackingId: process.env.GA_TRACKING_ID }
 		}
 		// this (optional) plugin enables Progressive Web App + Offline functionality
 		// To learn more, visit: https://gatsby.dev/offline
