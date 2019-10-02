@@ -15,7 +15,7 @@ const QuizWatch = () => (
 				questions you're interested in reviewing later on.
 			</p>
 		}
-		href='https://itunes.apple.com/us/app/quiz-watch/id1454913754?ls=1&mt=8'
+		href='https://apps.apple.com/us/app/quiz-watch/id1454913754?ls=1'
 		name='Quiz Watch'
 		skills='React Native, Redux, React Navigation, JavaScript'
 	/>

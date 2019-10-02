@@ -15,6 +15,32 @@ const Projects = () => (
 			<QuizWatch />
 			<Calculator />
 			<Project
+				desc={
+					<p>
+						Geographist is an app for geography lovers everywhere on the iOS App
+						Store now. Traverse the world by discovering and exploring new
+						cities. Learn about these new cities with a plethora of intriguing
+						information, and then test your knowledge of the exact locations of
+						these cities later!
+					</p>
+				}
+				href='https://apps.apple.com/us/app/geographist/id1470035851'
+				name='Geographist'
+				skills='React Native, Redux, React Navigation, JavaScript'
+			/>
+			<Project
+				desc={
+					<p>
+						MemRoll allows you to take a journey to the past, while also testing
+						your knowledge of your own past. Go through photos from your camera
+						roll and guess how old they are.
+					</p>
+				}
+				href='https://apps.apple.com/us/app/memroll/id1459782811'
+				name='MemRoll'
+				skills='React Native, JavaScript'
+			/>
+			<Project
 				code='https://github.com/Brandons42/google-homepage'
 				desc={
 					<p>
