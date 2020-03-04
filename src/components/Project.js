@@ -1,5 +1,6 @@
 import React from 'react';
 
+import DynamicImage from '../components/DynamicImage';
 import styles from '../styles/project.module.scss';
 
 const Project = props => (
@@ -9,8 +10,8 @@ const Project = props => (
 				<h3>{props.name}</h3>
 			</a>
 		) : (
-			<h3>{props.name}</h3>
-		)}
+				<h3>{props.name}</h3>
+			)}
 		{props.code && (
 			<a className={styles.spaced} href={props.code}>
 				Check out the code
@@ -18,6 +19,13 @@ const Project = props => (
 		)}
 		<i className={styles.spaced}>{props.skills}</i>
 		{props.desc}
+		{props.imgs && (
+			<div className={styles.imageContainer}>
+				{props.imgs.map(img => (
+					<DynamicImage className={styles.image} img={img} />
+				))}
+			</div>
+		)}
 	</div>
 );
 

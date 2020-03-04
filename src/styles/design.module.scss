@@ -1,0 +1,45 @@
+@import 'vars';
+
+.bio {
+	@extend %blue;
+}
+
+.container {
+	@extend %blue;
+}
+
+.gallery {
+	@extend %white;
+
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+
+	.box {
+		height: 20vw;
+		max-height: 200px;
+		padding: 20px;
+	}
+
+	img {
+		max-height: 100%;
+		max-width: 100%;
+	}
+}
+
+.header {
+	@extend %header;
+}
+
+.slideDiv {
+	max-height: 375px;
+	height: 30vw;
+
+	img {
+		display: block;
+		max-height: 100%;
+		max-width: 100%;
+		margin: auto;
+		width: auto !important;
+	}
+}

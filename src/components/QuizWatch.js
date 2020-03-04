@@ -2,6 +2,8 @@ import React from 'react';
 
 import Project from './Project';
 
+const { quizWatchDisplay1, quizWatchDisplay2 } = require('../../img-data');
+
 const QuizWatch = () => (
 	<Project
 		desc={
@@ -16,6 +18,7 @@ const QuizWatch = () => (
 			</p>
 		}
 		href='https://apps.apple.com/us/app/quiz-watch/id1454913754?ls=1'
+		imgs={[quizWatchDisplay1, quizWatchDisplay2]}
 		name='Quiz Watch'
 		skills='React Native, Redux, React Navigation, JavaScript'
 	/>

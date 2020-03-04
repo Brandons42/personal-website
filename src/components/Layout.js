@@ -9,9 +9,10 @@ import '../styles/reset.css';
 const Layout = props => (
 	<div>
 		<SEO title={props.title} />
-		<Nav />
+		<Nav design={props.design} />
 		<main className={styles.content}>{props.children}</main>
 		<footer className={styles.footer}>
+			<Link to='/design'>Design gallery</Link>
 			<p>© {new Date().getFullYear()} Brandon Suen</p>
 			<Link to='/privacy'>Privacy policy</Link>
 		</footer>

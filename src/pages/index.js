@@ -1,27 +1,32 @@
 import React from 'react';
 import { graphql, Link, StaticQuery } from 'gatsby';
 import BackgroundImage from 'gatsby-background-image';
-import ReCaptcha from 'react-google-recaptcha';
 
 import Calculator from '../components/Calculator';
+import Contact from '../components/Contact';
 import Layout from '../components/Layout';
 import QuizWatch from '../components/QuizWatch';
 import styles from '../styles/index.module.scss';
 
 export default class Home extends React.Component {
-	state = {
-		href: 'mailto:bqrwaznxdoqwnzsxueqwnzdxevqwezlxopqwezrx@qgwmzaxiqlw.zcxoqmw',
-		loaded: false,
-		show: false
-	};
-
-	_correct = () =>
-		this.setState({ href: this.state.href.replace(/q|w|z|x/g, '') });
-
-	_handleChange = value => this.setState({ show: !!value });
-
-	_onLoad = () => this.setState({ loaded: true });
-
+	componentDidMount() {
+		document.onkeydown = function (e) {
+			switch (e.keyCode) {
+				case 37:
+					alert('left');
+					break;
+				case 38:
+					alert('up');
+					break;
+				case 39:
+					alert('right');
+					break;
+				case 40:
+					alert('down');
+					break;
+			}
+		};
+	}
 	render() {
 		return (
 			<Layout title='Home'>
@@ -79,28 +84,7 @@ export default class Home extends React.Component {
 						</Link>
 					</div>
 				</div>
-				<div className={styles.blue} id='contact'>
-					<h2>Contact Me</h2>
-					<div className={styles.center}>
-						{this.state.loaded || <p>ReCaptcha loading...</p>}
-						<ReCaptcha
-							asyncScriptOnLoad={this._onLoad}
-							className={styles.captcha}
-							onChange={this._handleChange}
-							sitekey={process.env.GATSBY_CAPTCHA_SITE_KEY}
-						/>
-						{this.state.show && (
-							<a
-								className={styles.email}
-								href={this.state.href}
-								onFocus={this._correct}
-								onMouseOver={this._correct}
-							>
-								Contact me via email here
-							</a>
-						)}
-					</div>
-				</div>
+				<Contact />
 			</Layout>
 		);
 	}

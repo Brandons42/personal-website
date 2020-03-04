@@ -1,0 +1,30 @@
+@import 'vars';
+
+.close {
+	background-color: $semitparent;
+	border: none;
+	height: 20px;
+	left: 10px;
+	position: absolute;
+	top: 10px;
+	width: 50px;
+
+	p {
+		@extend %body-text;
+		color: #fff;
+	}
+}
+
+.container {
+	align-items: center;
+	background-color: $blue;
+	display: flex;
+	height: 100vh;
+	justify-content: center;
+	width: 100vw;
+}
+
+.image {
+	max-height: 90vh;
+	max-width: 90vw;
+}

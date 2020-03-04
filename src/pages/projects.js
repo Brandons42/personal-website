@@ -6,6 +6,8 @@ import Project from '../components/Project';
 import QuizWatch from '../components/QuizWatch';
 import styles from '../styles/projects.module.scss';
 
+const { geographistDisplay1, geographistDisplay2, geographistDisplay3, memRollDisplay } = require('../../img-data');
+
 const Projects = () => (
 	<Layout title='Projects'>
 		<div className={styles.container}>
@@ -25,6 +27,7 @@ const Projects = () => (
 					</p>
 				}
 				href='https://apps.apple.com/us/app/geographist/id1470035851'
+				imgs={[geographistDisplay1, geographistDisplay2, geographistDisplay3]}
 				name='Geographist'
 				skills='React Native, Redux, React Navigation, JavaScript'
 			/>
@@ -37,6 +40,7 @@ const Projects = () => (
 					</p>
 				}
 				href='https://apps.apple.com/us/app/memroll/id1459782811'
+				imgs={[memRollDisplay]}
 				name='MemRoll'
 				skills='React Native, JavaScript'
 			/>
