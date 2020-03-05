@@ -1,7 +1,5 @@
 const { imgs } = require('./img-data');
 
-console.log(imgs);
-
 exports.createPages = ({ actions }) => {
 	for (let q = 0; q < imgs.length; q++) {
 		actions.createPage({

@@ -14,9 +14,10 @@ const Layout = props => (
 		<main className={styles.content}>{props.children}</main>
 		<Contact />
 		<footer className={styles.footer}>
-			<Link to='/design'>Design gallery</Link>
 			<p>© {new Date().getFullYear()} Brandon Suen</p>
+			<Link to='/design'>Design gallery</Link>
 			<Link to='/privacy'>Privacy policy</Link>
+			<a href='/sitemap.xml'>Sitemap</a>
 		</footer>
 	</div>
 );

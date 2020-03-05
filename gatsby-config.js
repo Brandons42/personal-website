@@ -4,7 +4,8 @@ module.exports = {
 	siteMetadata: {
 		title: `Brandon Suen's Personal Website`,
 		description: `The personal website of Brandon Suen.`,
-		author: `Brandon Suen`
+		author: `Brandon Suen`,
+		siteUrl: `https://bsuen.netlify.com/`
 	},
 	plugins: [
 		`gatsby-plugin-react-helmet`,
@@ -15,6 +16,7 @@ module.exports = {
 				path: `${__dirname}/src/images`
 			}
 		},
+		`gatsby-plugin-sitemap`,
 		`gatsby-transformer-sharp`,
 		`gatsby-plugin-favicon`,
 		`gatsby-plugin-sass`,
