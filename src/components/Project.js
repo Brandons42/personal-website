@@ -1,4 +1,5 @@
 import React from 'react';
+import { OutboundLink } from 'gatsby-plugin-google-analytics';
 
 import DynamicImage from '../components/DynamicImage';
 import styles from '../styles/project.module.scss';
@@ -6,16 +7,17 @@ import styles from '../styles/project.module.scss';
 const Project = props => (
 	<div>
 		{props.href ? (
-			<a href={props.href}>
+			<OutboundLink href={props.href}>
 				<h3>{props.name}</h3>
-			</a>
+			</OutboundLink>
 		) : (
 				<h3>{props.name}</h3>
 			)}
 		{props.code && (
-			<a className={styles.spaced} href={props.code}>
+
+			<OutboundLink className={styles.spaced} href={props.code}>
 				Check out the code
-			</a>
+			</OutboundLink>
 		)}
 		<i className={styles.spaced}>{props.skills}</i>
 		{props.desc}
