@@ -73,7 +73,12 @@ export default class Design extends React.Component {
 					<h1 className={styles.header}>My Design Gallery</h1>
 				</div>
 				<Carousel autoPlay infiniteLoop showThumbs={false} useKeyboardArrows>
-					<div className={styles.slideDiv}>
+					{[Poster, Magazine, Graffiti, Yoda, Mandala].map((Img, q) => (
+						<div className={styles.slideDiv} key={q}>
+							<Img />
+						</div>
+					))}
+					{/*<div className={styles.slideDiv}>
 						<Graffiti />
 						<p className='legend'>Graffiti Art</p>
 					</div>
@@ -92,7 +97,7 @@ export default class Design extends React.Component {
 					<div className={styles.slideDiv}>
 						<Yoda />
 						<p className='legend'>Legend 3</p>
-					</div>
+					</div>*/}
 				</Carousel>
 				<div className={styles.bio}>
 					<h3>Artist Bio</h3>
