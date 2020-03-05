@@ -5,9 +5,12 @@
 	background-color: $blue;
 	border: none;
 	border-radius: 15px;
-	color: #ffffff;
 	margin: 0 3vw;
 	padding: 1vh 2vw;
+
+	a {
+		color: #fff;
+	}
 }
 
 .link {

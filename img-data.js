@@ -1,67 +1,125 @@
+exports.albumBack = {
+	alt: 'An album back design',
+	route: 'album-back'
+};
+
+exports.albumCover = {
+	alt: 'An album cover design',
+	route: 'album-cover'
+};
+
+exports.albumDisc = {
+	alt: 'An album disc design',
+	route: 'album-disc'
+};
+
+exports.artShowPoster = {
+	alt: 'A poster for an art show',
+	route: 'art-show-poster'
+};
+
+exports.blueMoodBoard = {
+	alt: 'A mood board representing blue colors',
+	route: 'blue-mood-board'
+};
+
+exports.cards = {
+	alt: 'A series of cards with unique designs',
+	route: 'cards'
+};
+
+exports.deerGiraffe = {
+	alt: 'A giraffe with a deer\'s face',
+	route: 'deer-giraffe'
+};
+
 exports.geographistDisplay1 = {
 	alt: 'Screens from the Geographist iOS app',
-	ex: 'png',
 	route: 'geographist-display-1'
 };
 
 exports.geographistDisplay2 = {
 	alt: 'Screens from the Geographist iOS app',
-	ex: 'png',
 	route: 'geographist-display-2'
 };
 
 exports.geographistDisplay3 = {
 	alt: 'Screens from the Geographist iOS app',
-	ex: 'png',
 	route: 'geographist-display-3'
 };
-
 exports.graffiti = {
 	alt: 'My graffiti artwork of my name',
-	ex: 'png',
 	route: 'graffiti'
+};
+
+exports.hoth = {
+	alt: 'Alterations of Hoth',
+	route: 'hoth'
+};
+
+exports.junkShip = {
+	alt: 'A junk ship',
+	route: 'junk-ship'
+};
+
+exports.kowloonSF = {
+	alt: 'A combination of Kowloon and San Francisco',
+	route: 'kowloon-sf'
 };
 
 exports.magazine = {
 	alt: 'A magazine cover of myself',
-	ex: 'png',
 	route: 'magazine'
 };
 
 exports.mandala = {
 	alt: 'My mandala I made',
-	ex: 'png',
 	route: 'mandala'
 };
 
 exports.memRollDisplay = {
 	alt: 'Screens from the MemRoll iOS app',
-	ex: 'png',
 	route: 'memroll-display'
+};
+
+exports.natureEffect = {
+	alt: 'Nature effects',
+	route: 'nature-effect'
 };
 
 exports.poster = {
 	alt: 'My propaganda poster',
-	ex: 'png',
 	route: 'poster'
 };
 
 exports.quizWatchDisplay1 = {
 	alt: 'Screens from the Quiz Watch iOS app',
-	ex: 'png',
 	route: 'quiz-watch-display-1'
 };
 
 exports.quizWatchDisplay2 = {
 	alt: 'Screens from the Quiz Watch iOS app',
-	ex: 'png',
 	route: 'quiz-watch-display-2'
+};
+
+exports.robot = {
+	alt: 'A robot character',
+	route: 'robot'
+};
+
+exports.smhsMagazine = {
+	alt: 'A magazine cover',
+	route: 'smhs-magazine'
+};
+
+exports.sneaker = {
+	alt: 'A design for a sneaker with a mood board',
+	route: 'sneaker'
 };
 
 exports.yoda = {
 	alt: 'My Yoda illustration',
-	ex: 'png',
 	route: 'yoda'
 };
 
-exports.imgs = [exports.geographistDisplay1, exports.geographistDisplay2, exports.geographistDisplay3, exports.graffiti, exports.magazine, exports.mandala, exports.memRollDisplay, exports.poster, exports.quizWatchDisplay1, exports.quizWatchDisplay2, exports.yoda];
+exports.imgs = [exports.albumBack, exports.albumCover, exports.albumDisc, exports.artShowPoster, exports.blueMoodBoard, exports.cards, exports.deerGiraffe, exports.geographistDisplay1, exports.geographistDisplay2, exports.geographistDisplay3, exports.graffiti, exports.hoth, exports.junkShip, exports.kowloonSF, exports.magazine, exports.mandala, exports.memRollDisplay, exports.natureEffect, exports.poster, exports.quizWatchDisplay1, exports.quizWatchDisplay2, exports.robot, exports.smhsMagazine, exports.sneaker, exports.yoda];

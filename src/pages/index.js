@@ -3,7 +3,6 @@ import { graphql, Link, StaticQuery } from 'gatsby';
 import BackgroundImage from 'gatsby-background-image';
 
 import Calculator from '../components/Calculator';
-import Contact from '../components/Contact';
 import Layout from '../components/Layout';
 import LinkedIn from '../components/LinkedIn';
 import QuizWatch from '../components/QuizWatch';
@@ -67,7 +66,6 @@ export default class Home extends React.Component {
 						</Link>
 					</div>
 				</div>
-				<Contact />
 				<script type='text/javascript' src='https://platform.linkedin.com/badges/js/profile.js' async defer></script>
 			</Layout>
 		);

@@ -24,8 +24,8 @@ const Nav = props => (
 					Projects
 				</Link>
 			}
-			<button className={styles.button} onClick={() => navigate('/#contact')}>
-				Contact
+			<button className={styles.button}>
+				<a href='#contact'>Contact</a>
 			</button>
 		</div>
 	</div>

@@ -8,7 +8,7 @@ const IMGDisplay = ({ pageContext: { img } }) => (
 		<a className={styles.close} onClick={() => navigate(-1)}>
 			<p>Close</p>
 		</a>
-		<img alt={img.alt} className={styles.image} src={require(`../images/${img.route}.${img.ex}`)} />
+		<img alt={img.alt} className={styles.image} src={require(`../images/${img.route}.png`)} />
 	</div>
 );
 
