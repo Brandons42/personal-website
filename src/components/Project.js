@@ -21,8 +21,8 @@ const Project = props => (
 		{props.desc}
 		{props.imgs && (
 			<div className={styles.imageContainer}>
-				{props.imgs.map(img => (
-					<DynamicImage className={styles.image} img={img} />
+				{props.imgs.map((img, q) => (
+					<DynamicImage className={styles.image} img={img} key={q} />
 				))}
 			</div>
 		)}

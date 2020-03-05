@@ -1,5 +1,15 @@
+@import 'vars';
+
+.blue {
+	@extend %blue;
+}
+
 .captcha {
 	display: inline-block;
+}
+
+.center {
+	text-align: center;
 }
 
 .email {

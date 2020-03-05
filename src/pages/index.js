@@ -5,28 +5,11 @@ import BackgroundImage from 'gatsby-background-image';
 import Calculator from '../components/Calculator';
 import Contact from '../components/Contact';
 import Layout from '../components/Layout';
+import LinkedIn from '../components/LinkedIn';
 import QuizWatch from '../components/QuizWatch';
 import styles from '../styles/index.module.scss';
 
 export default class Home extends React.Component {
-	componentDidMount() {
-		document.onkeydown = function (e) {
-			switch (e.keyCode) {
-				case 37:
-					alert('left');
-					break;
-				case 38:
-					alert('up');
-					break;
-				case 39:
-					alert('right');
-					break;
-				case 40:
-					alert('down');
-					break;
-			}
-		};
-	}
 	render() {
 		return (
 			<Layout title='Home'>
@@ -60,20 +43,20 @@ export default class Home extends React.Component {
 					)}
 				/>
 				<div className={styles.content}>
-					<div className={styles.blue}>
-						<p>
-							Hi, my name is Brandon. Thanks for coming to my website. I'm a
-							programmer forever driven by a passion to build and learn new
-							things.
-						</p>
-					</div>
-					<div className={styles.white}>
-						<h2>My Stack</h2>
-						<p>
-							To build my websites, I use React.js on the front-end. I use Sass
-							for styling and Node.js on the back-end. I make my mobile apps
-							using the React Native framework.
-						</p>
+					<div className={styles.bio}>
+						<div className={styles.bioText}>
+							<h3>
+								Who I am
+							</h3>
+							<p>
+								I'm a
+								programmer forever driven by a passion to build and learn new
+								things. To build my websites, I use React.js on the front-end. I use Sass
+								for styling and Node.js on the back-end. I make my mobile apps
+								using the React Native framework. If you'd like me to build you an app or website or you'd like to get in touch for another reason, feel free to connect with me on LinkedIn or <a href='#contact'>contact me below</a>.
+							</p>
+						</div>
+						<LinkedIn />
 					</div>
 					<div className={styles.white}>
 						<h2>Featured Work</h2>
@@ -85,6 +68,7 @@ export default class Home extends React.Component {
 					</div>
 				</div>
 				<Contact />
+				<script type='text/javascript' src='https://platform.linkedin.com/badges/js/profile.js' async defer></script>
 			</Layout>
 		);
 	}

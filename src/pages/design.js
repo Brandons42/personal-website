@@ -57,8 +57,8 @@ export default class Design extends React.Component {
 					<h3>Artist Bio</h3>
 				</div>
 				<div className={styles.gallery}>
-					{[Graffiti, Magazine, Mandala, Poster, Yoda].map(Img => (
-						<div className={styles.box}>
+					{[Graffiti, Magazine, Mandala, Poster, Yoda].map((Img, q) => (
+						<div className={styles.box} key={q}>
 							<Img />
 						</div>
 					))}

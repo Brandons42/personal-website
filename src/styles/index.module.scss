@@ -2,9 +2,6 @@
 
 $fixh: 55vh;
 
-.blue {
-	@extend %blue;
-}
 
 .banner {
 	background-position: 70% 0%;
@@ -16,6 +13,24 @@ $fixh: 55vh;
 	position: fixed;
 	width: 100vw;
 	z-index: -1;
+}
+
+.bio {
+	@extend %blue;
+
+	align-items: center;
+	display: flex;
+	flex-wrap: wrap-reverse;
+	justify-content: space-between;
+}
+
+.bioText {
+	flex: 1;
+	margin-right: 10vw;
+
+	h3 {
+		margin-bottom: 2vh;
+	}
 }
 
 .center {

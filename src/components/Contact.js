@@ -1,7 +1,6 @@
 import React from 'react';
 import ReCaptcha from 'react-google-recaptcha';
 
-import pageStyles from '../styles/index.module.scss';
 import styles from '../styles/contact.module.scss';
 
 export default class Contact extends React.Component {
@@ -20,9 +19,9 @@ export default class Contact extends React.Component {
 
 	render() {
 		return (
-			<div className={pageStyles.blue} id='contact'>
+			<div className={styles.blue} id='contact'>
 				<h2>Contact Me</h2>
-				<div className={pageStyles.center}>
+				<div className={styles.center}>
 					{this.state.loaded || <p>ReCaptcha loading...</p>}
 					<ReCaptcha
 						asyncScriptOnLoad={this._onLoad}
