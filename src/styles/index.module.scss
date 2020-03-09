@@ -2,7 +2,6 @@
 
 $fixh: 55vh;
 
-
 .banner {
 	background-position: 70% 0%;
 	background-position-x: 70%;
@@ -58,6 +57,32 @@ $fixh: 55vh;
 	display: block;
 	margin: 0 auto;
 	width: 35vmin;
+}
+
+.overlay {
+	background-color: black;
+	height: 80vh;
+	margin-bottom: -80vh;
+	position: relative;
+	top: -80vh;
+	width: 62vh;
+}
+
+.resume {
+	height: 80vh;
+	position: relative;
+	width: 62vh;
+}
+
+.resumeContainer {
+	align-items: center;
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+}
+
+.small {
+	font-size: 12px !important;
 }
 
 .title {

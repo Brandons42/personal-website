@@ -23,6 +23,7 @@ $navh: 15vh;
 
 %container {
 	padding: 5vh 10vw;
+	width: 100vw;
 
 	h2 {
 		@extend %header;
