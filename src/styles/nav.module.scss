@@ -2,15 +2,21 @@
 
 .button {
 	@extend %body-text;
+
 	background-color: $blue;
 	border: none;
 	border-radius: 15px;
-	margin: 0 3vw;
+	color: #fff;
 	padding: 1vh 2vw;
+	text-decoration: underline;
+}
 
-	a {
-		color: #fff;
-	}
+.button:hover {
+	cursor: pointer;
+}
+
+.buttonLink {
+	margin: 0 3vw;
 }
 
 .link {

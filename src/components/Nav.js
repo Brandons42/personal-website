@@ -24,10 +24,8 @@ const Nav = props => (
 					Projects
 				</Link>
 			)}
-			<a href='#contact'>
-				<button className={styles.button}>
-					<a href='#contact'>Contact</a>
-				</button>
+			<a className={styles.buttonLink} href='#contact'>
+				<button className={styles.button}>Contact</button>
 			</a>
 		</div>
 	</div>
