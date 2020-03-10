@@ -12,7 +12,7 @@ import styles from '../styles/index.module.scss';
 const resumeHref = '/brandon-suen-resume.pdf';
 
 const ResumeLink = props => (
-	<a download href={resumeHref} target='_blank'>
+	<a download href={resumeHref} rel='noopener noreferrer' target='_blank'>
 		{props.children}
 	</a>
 );
@@ -95,7 +95,7 @@ export default class Home extends React.Component {
 							<p className={styles.resumeLinks}>
 								<ResumeLink>Download*</ResumeLink>
 								{'   |   '}
-								<a href={resumeHref} target='_blank'>
+								<a href={resumeHref} rel='noopener noreferrer' target='_blank'>
 									Open in new tab
 								</a>
 							</p>
