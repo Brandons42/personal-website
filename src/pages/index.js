@@ -74,7 +74,7 @@ export default class Home extends React.Component {
 						</div>
 						<LinkedIn />
 					</div>
-					<div className={styles.white}>
+					<div className={styles.resumeWhite}>
 						<h2>Résumé</h2>
 						<div className={styles.resumeContainer}>
 							<div>
@@ -92,7 +92,7 @@ export default class Home extends React.Component {
 									/>
 								</ResumeLink>
 							</div>
-							<p>
+							<p className={styles.resumeLinks}>
 								<ResumeLink>Download*</ResumeLink>
 								{'   |   '}
 								<a href={resumeHref} target='_blank'>

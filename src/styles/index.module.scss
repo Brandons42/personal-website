@@ -78,7 +78,18 @@ $fixh: 55vh;
 	align-items: center;
 	display: flex;
 	flex-direction: column;
+	height: 80vh;
 	width: 100%;
+}
+
+.resumeLinks {
+	margin: 10px 0 2px;
+}
+
+.resumeWhite {
+	@extend %white;
+
+	padding-bottom: 15vh;
 }
 
 .small {
