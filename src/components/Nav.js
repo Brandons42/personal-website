@@ -1,6 +1,5 @@
 import React from 'react';
 import { Link } from 'gatsby';
-import { navigate } from '@reach/router';
 
 import logo from '../images/bsuen-logo.svg';
 
