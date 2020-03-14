@@ -12,7 +12,17 @@ import styles from '../styles/index.module.scss';
 const resumeHref = '/brandon-suen-resume.pdf';
 
 const ResumeLink = props => (
-	<a download href={resumeHref} rel='noopener noreferrer' target='_blank'>
+	<a
+		className={props.className}
+		download
+		href={resumeHref}
+		onBlur={props.onBlur}
+		onMouseLeave={props.onMouseLeave}
+		onMouseOver={props.onMouseOver}
+		onFocus={props.onFocus}
+		rel='noopener noreferrer'
+		target='_blank'
+	>
 		{props.children}
 	</a>
 );
@@ -74,32 +84,42 @@ export default class Home extends React.Component {
 						</div>
 						<LinkedIn />
 					</div>
-					<div className={styles.resumeWhite}>
-						<h2>Résumé</h2>
-						<div className={styles.resumeContainer}>
-							<div>
-								<ResumeLink>
-									<img
-										alt="Brandon Suen's resume"
-										className={styles.resume}
-										src={resume}
-									/>
-									<div
-										className={styles.overlay}
-										onMouseOver={this._activate}
+					<div className={styles.white}>
+						<div>
+							<h2>Résumé</h2>
+							<div className={styles.resumeContainer}>
+								<div className={styles.resumeFiller}>
+									<ResumeLink
+										className={styles.resumeLink}
+										onBlur={this._deactivate}
 										onMouseLeave={this._deactivate}
-										style={{ opacity: this.state.opacity }}
-									/>
-								</ResumeLink>
+										onMouseOver={this._activate}
+										onFocus={this._activate}
+									>
+										<img
+											alt="Brandon Suen's resume"
+											className={styles.resume}
+											src={resume}
+										/>
+										<div
+											className={styles.overlay}
+											style={{ opacity: this.state.opacity }}
+										/>
+									</ResumeLink>
+								</div>
+								<p className={styles.resumeLinks}>
+									<ResumeLink>Download*</ResumeLink>
+									{'   |   '}
+									<a
+										href={resumeHref}
+										rel='noopener noreferrer'
+										target='_blank'
+									>
+										Open in new tab
+									</a>
+								</p>
+								<p className={styles.small}>*Not supported in all browsers</p>
 							</div>
-							<p className={styles.resumeLinks}>
-								<ResumeLink>Download*</ResumeLink>
-								{'   |   '}
-								<a href={resumeHref} rel='noopener noreferrer' target='_blank'>
-									Open in new tab
-								</a>
-							</p>
-							<p className={styles.small}>*Not supported in all browsers</p>
 						</div>
 					</div>
 					<div className={styles.white}>

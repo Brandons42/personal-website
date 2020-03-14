@@ -1,6 +1,8 @@
 @import 'vars';
 
 $fixh: 55vh;
+$resumeHeight: 80vh;
+$resumeWidth: 62vh;
 
 .banner {
 	background-position: 70% 0%;
@@ -61,35 +63,40 @@ $fixh: 55vh;
 
 .overlay {
 	background-color: black;
-	height: 80vh;
-	margin-bottom: -80vh;
+	height: $resumeHeight;
+	margin-bottom: -$resumeHeight;
 	position: relative;
-	top: -80vh;
-	width: 62vh;
+	top: -$resumeHeight;
+	width: $resumeWidth;
 }
 
 .resume {
-	height: 80vh;
-	position: relative;
-	width: 62vh;
+	height: $resumeHeight;
+	width: $resumeWidth;
 }
 
 .resumeContainer {
 	align-items: center;
 	display: flex;
 	flex-direction: column;
-	height: 80vh;
 	width: 100%;
 }
 
-.resumeLinks {
-	margin: 10px 0 2px;
+.resumeFiller {
+	height: $resumeHeight;
+	overflow-y: hidden;
 }
 
-.resumeWhite {
-	@extend %white;
+/*.resumeLink {
+	bottom: 0;
+	left: 0;
+	position: relative;
+	right: 0;
+	top: 0;
+}*/
 
-	padding-bottom: 15vh;
+.resumeLinks {
+	margin: 20px 0 2px;
 }
 
 .small {
