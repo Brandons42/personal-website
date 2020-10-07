@@ -1,11 +1,23 @@
 @import 'vars';
 
-.container > div {
-	&:nth-child(even) {
-		@extend %blue;
-	}
+.content {
+	display: flex;
+}
 
-	&:nth-child(odd) {
-		@extend %white;
-	}
+.navBar {
+	border-right: 5px solid $blue;
+	height: 200px;
+	margin: 5vh 0;
+	padding: 0 5vw;
+	position: -webkit-sticky;
+	position: sticky;
+	top: $navh;
+}
+
+.projects {
+	flex: 1;
+}
+
+.title {
+	@extend %blue;
 }

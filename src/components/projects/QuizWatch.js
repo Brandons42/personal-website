@@ -1,8 +1,19 @@
 import React from 'react';
 
-import Project from './Project';
+import Project from '../Project';
+import skills from '../../skills';
+import tech from '../../tech';
 
-const { quizWatchDisplay1, quizWatchDisplay2 } = require('../../img-data');
+const { quizWatchDisplay1, quizWatchDisplay2 } = require('../../../img-data');
+
+const name = 'Quiz Watch';
+const projSkills = [skills.mobile];
+const projTech = [
+	tech.reactNative,
+	tech.redux,
+	tech.reactNavigation,
+	tech.javaScript
+];
 
 const QuizWatch = () => (
 	<Project
@@ -19,9 +30,17 @@ const QuizWatch = () => (
 		}
 		href='https://apps.apple.com/us/app/quiz-watch/id1454913754?ls=1'
 		imgs={[quizWatchDisplay1, quizWatchDisplay2]}
-		name='Quiz Watch'
-		skills='React Native, Redux, React Navigation, JavaScript'
+		name={name}
+		skills={projSkills}
+		tech={projTech}
 	/>
 );
 
 export default QuizWatch;
+
+export const quizWatch = {
+	Component: QuizWatch,
+	name,
+	projSkills,
+	projTech
+};

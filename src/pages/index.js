@@ -2,10 +2,10 @@ import React from 'react';
 import { graphql, Link, StaticQuery } from 'gatsby';
 import BackgroundImage from 'gatsby-background-image';
 
-import Calculator from '../components/Calculator';
+import Calculator from '../components/projects/Calculator';
 import Layout from '../components/Layout';
 import LinkedIn from '../components/LinkedIn';
-import QuizWatch from '../components/QuizWatch';
+import QuizWatch from '../components/projects/QuizWatch';
 import resume from '../images/resume.png';
 import styles from '../styles/index.module.scss';
 
