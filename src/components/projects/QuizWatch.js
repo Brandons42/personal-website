@@ -15,7 +15,7 @@ const projTech = [
 	tech.javaScript
 ];
 
-const QuizWatch = () => (
+const QuizWatch = props => (
 	<Project
 		desc={
 			<p>
@@ -31,6 +31,8 @@ const QuizWatch = () => (
 		href='https://apps.apple.com/us/app/quiz-watch/id1454913754?ls=1'
 		imgs={[quizWatchDisplay1, quizWatchDisplay2]}
 		name={name}
+		onClickTag={props.onClickTag}
+		selectedTags={props.selectedTags}
 		skills={projSkills}
 		tech={projTech}
 	/>

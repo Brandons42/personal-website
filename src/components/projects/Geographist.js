@@ -19,7 +19,7 @@ const projTech = [
 	tech.reactNavigation
 ];
 
-const Geographist = () => (
+const Geographist = props => (
 	<Project
 		desc={
 			<p>
@@ -33,6 +33,8 @@ const Geographist = () => (
 		href='https://apps.apple.com/us/app/geographist/id1470035851'
 		imgs={[geographistDisplay1, geographistDisplay2, geographistDisplay3]}
 		name={name}
+		onClickTag={props.onClickTag}
+		selectedTags={props.selectedTags}
 		skills={projSkills}
 		tech={projTech}
 	/>

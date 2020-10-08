@@ -10,7 +10,7 @@ const name = 'MemRoll';
 const projSkills = [skills.mobile];
 const projTech = [tech.reactNative, tech.javaScript];
 
-const MemRoll = () => (
+const MemRoll = props => (
 	<Project
 		desc={
 			<p>
@@ -22,6 +22,8 @@ const MemRoll = () => (
 		href='https://apps.apple.com/us/app/memroll/id1459782811'
 		imgs={[memRollDisplay]}
 		name={name}
+		onClickTag={props.onClickTag}
+		selectedTags={props.selectedTags}
 		skills={projSkills}
 		tech={projTech}
 	/>

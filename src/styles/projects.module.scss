@@ -4,20 +4,52 @@
 	display: flex;
 }
 
+.link {
+	color: $blue;
+}
+
 .navBar {
+	@extend %body-text;
+
 	border-right: 5px solid $blue;
-	height: 200px;
+	height: 80vh;
 	margin: 5vh 0;
 	padding: 0 5vw;
 	position: -webkit-sticky;
 	position: sticky;
 	top: $navh;
+	width: 30vw;
+
+	.indent {
+		margin: 5px;
+	}
 }
 
 .projects {
 	flex: 1;
 }
 
+.selectedSkill {
+	background-color: $blue;
+	color: white;
+}
+
+.skill {
+	cursor: pointer;
+	padding-left: 5px;
+	width: 100%;
+
+	&:hover {
+		background-color: gray;
+		opacity: 0.5;
+	}
+}
+
 .title {
 	@extend %blue;
+}
+
+.unselectedSkill {
+	background-color: none;
+	color: $black;
 }

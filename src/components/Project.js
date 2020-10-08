@@ -4,6 +4,7 @@ import { Carousel } from 'react-responsive-carousel';
 
 //import DynamicImage from '../components/DynamicImage';
 import Image from '../components/Image';
+import Tag from '../components/Tag';
 import styles from '../styles/project.module.scss';
 import '../styles/arrow-overide.scss';
 
@@ -21,16 +22,19 @@ const Project = props => (
 				Check out the code
 			</OutboundLink>
 		)}
+		<i className={styles.spaced}>{props.skills}</i>
 		{props.tech && (
 			<div className={styles.techs}>
-				{props.tech.map(tech => (
-					<div className={styles.tech}>
-						<p>{tech}</p>
-					</div>
+				{props.tech.map((tech, i) => (
+					<Tag
+						key={i}
+						onClick={props.onClickTag}
+						selected={props.selectedTags.includes(tech)}
+						text={tech}
+					/>
 				))}
 			</div>
 		)}
-		<i className={styles.spaced}>{props.skills}</i>
 		{props.desc}
 		{/*props.imgs && (
 			<div className={styles.imageContainer}>
@@ -47,8 +51,8 @@ const Project = props => (
 				showThumbs={false}
 				useKeyboardArrows
 			>
-				{props.imgs.map((img, q) => (
-					<div className={styles.slideDiv} key={q}>
+				{props.imgs.map((img, i) => (
+					<div className={styles.slideDiv} key={i}>
 						<Image
 							alt={img.alt}
 							route={img.route}

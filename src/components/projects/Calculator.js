@@ -3,6 +3,7 @@ import React from 'react';
 import Project from '../Project';
 import skills from '../../skills';
 import tech from '../../tech';
+import { checkPropTypes } from 'prop-types';
 
 const name = 'Calculator';
 const projSkills = [skills.frontEnd];
@@ -15,7 +16,7 @@ const projTech = [
 	tech.html
 ];
 
-const Calculator = () => (
+const Calculator = props => (
 	<Project
 		code='https://github.com/Brandons42/calculator'
 		desc={
@@ -27,6 +28,8 @@ const Calculator = () => (
 		}
 		href='https://brandons42.github.io/calculator'
 		name={name}
+		onClickTag={props.onClickTag}
+		selectedTags={props.selectedTags}
 		skills={projSkills}
 		tech={projTech}
 	/>

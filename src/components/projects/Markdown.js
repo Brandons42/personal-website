@@ -14,7 +14,7 @@ const projTech = [
 	tech.javaScript
 ];
 
-const Markdown = () => (
+const Markdown = props => (
 	<Project
 		code='https://github.com/Brandons42/markdown'
 		desc={
@@ -25,6 +25,8 @@ const Markdown = () => (
 		}
 		href='https://brandons42.github.io/markdown'
 		name={name}
+		onClickTag={props.onClickTag}
+		selectedTags={props.selectedTags}
 		skills={projSkills}
 		tech={projTech}
 	/>

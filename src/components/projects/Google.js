@@ -8,7 +8,7 @@ const name = 'Google Homepage';
 const projSkills = [skills.frontEnd];
 const projTech = [tech.html, tech.css];
 
-const Google = () => (
+const Google = props => (
 	<Project
 		code='https://github.com/Brandons42/google-homepage'
 		desc={
@@ -21,6 +21,8 @@ const Google = () => (
 		}
 		href='https://brandons42.github.io/google-homepage'
 		name={name}
+		onClickTag={props.onClickTag}
+		selectedTags={props.selectedTags}
 		skills={projSkills}
 		tech={projTech}
 	/>
