@@ -5,6 +5,11 @@
 	width: 50%;
 }
 
+.code {
+	display: block;
+	margin: 5px 0 -10px;
+}
+
 .container {
 	@extend %white;
 }
@@ -28,9 +33,9 @@
 
 .spaced {
 	display: block;
-	margin: 15px 0;
+	margin: 10px 0 0;
 }
 
 .techs {
-	margin-top: 20px;
+	margin: 10px 0;
 }

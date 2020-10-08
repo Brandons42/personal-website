@@ -18,7 +18,7 @@ const Project = props => (
 			<h3>{props.name}</h3>
 		)}
 		{props.code && (
-			<OutboundLink className={styles.spaced} href={props.code}>
+			<OutboundLink className={styles.code} href={props.code}>
 				Check out the code
 			</OutboundLink>
 		)}
