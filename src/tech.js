@@ -1,7 +1,10 @@
 const tech = {
 	babel: 'Babel',
 	css: 'CSS',
-	gatsby: 'Gatsby.JS',
+	d3: 'D3.js',
+	firebase: 'Firebase',
+	gatsby: 'Gatsby.js',
+	gulp: 'gulp.js',
 	html: 'HTML',
 	javaScript: 'JavaScript',
 	parcel: 'Parcel',

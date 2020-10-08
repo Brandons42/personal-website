@@ -7,23 +7,35 @@ import styles from '../styles/projects.module.scss';
 import tech from '../tech';
 
 import { calculator } from '../components/projects/Calculator';
+import { fccPortfolio } from '../components/projects/FCCPortfolio';
 import { geographist } from '../components/projects/Geographist';
 import { google } from '../components/projects/Google';
 import { markdown } from '../components/projects/Markdown';
 import { memRoll } from '../components/projects/MemRoll';
 import { personal } from '../components/projects/Personal';
 import { quizWatch } from '../components/projects/QuizWatch';
+import { quizWatchDataAnalysis } from '../components/projects/QuizWatchDataAnalysis';
+import { todoList } from '../components/projects/TodoList';
+import { wordExists } from '../components/projects/WordExists';
+import { wordExistsDocs } from '../components/projects/WordExistsDocs';
+import { wordSprint } from '../components/projects/WordSprint';
 
 const all = 'All';
 
 const projects = [
 	calculator,
+	fccPortfolio,
 	geographist,
 	google,
 	markdown,
 	memRoll,
 	personal,
-	quizWatch
+	quizWatch,
+	quizWatchDataAnalysis,
+	todoList,
+	wordExists,
+	wordExistsDocs,
+	wordSprint
 ];
 
 const skillList = Object.values(skills);

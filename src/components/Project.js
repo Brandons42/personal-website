@@ -35,6 +35,16 @@ const Project = props => (
 				))}
 			</div>
 		)}
+		{props.related && (
+			<p className={styles.related}>
+				Related projects:{' '}
+				{props.related.map((project, i) => (
+					<a className={styles.link} href={'#' + project} key={i}>
+						{project}
+					</a>
+				))}
+			</p>
+		)}
 		{props.desc}
 		{/*props.imgs && (
 			<div className={styles.imageContainer}>

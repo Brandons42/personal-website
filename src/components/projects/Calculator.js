@@ -3,7 +3,8 @@ import React from 'react';
 import Project from '../Project';
 import skills from '../../skills';
 import tech from '../../tech';
-import { checkPropTypes } from 'prop-types';
+
+const { calculator: calculatorImg } = require('../../../img-data');
 
 const name = 'Calculator';
 const projSkills = [skills.frontEnd];
@@ -27,6 +28,7 @@ const Calculator = props => (
 			</p>
 		}
 		href='https://brandons42.github.io/calculator'
+		imgs={[calculatorImg]}
 		name={name}
 		onClickTag={props.onClickTag}
 		selectedTags={props.selectedTags}

@@ -31,6 +31,15 @@
 	width: 100%;
 }
 
+.related {
+	margin: 15px 0;
+
+	.link {
+		display: inline-block;
+		margin: 0 10px;
+	}
+}
+
 .spaced {
 	display: block;
 	margin: 10px 0 0;

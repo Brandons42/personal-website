@@ -23,14 +23,29 @@ exports.blueMoodBoard = {
 	route: 'blue-mood-board'
 };
 
+exports.calculator = {
+	alt: 'Functional web calculator',
+	route: 'calculator'
+};
+
 exports.cards = {
 	alt: 'A series of cards with unique designs',
 	route: 'cards'
 };
 
 exports.deerGiraffe = {
-	alt: 'A giraffe with a deer\'s face',
+	alt: "A giraffe with a deer's face",
 	route: 'deer-giraffe'
+};
+
+exports.fccPortfolio1 = {
+	alt: 'Portfolio web page from the freeCodeCamp curriculum',
+	route: 'fcc-portfolio1'
+};
+
+exports.fccPortfolio2 = {
+	alt: 'Portfolio web page from the freeCodeCamp curriculum',
+	route: 'fcc-portfolio2'
 };
 
 exports.geographistDisplay1 = {
@@ -47,6 +62,12 @@ exports.geographistDisplay3 = {
 	alt: 'Screens from the Geographist iOS app',
 	route: 'geographist-display-3'
 };
+
+exports.googleHomepage = {
+	alt: 'Google homepage recreation',
+	route: 'google-homepage'
+};
+
 exports.graffiti = {
 	alt: 'My graffiti artwork of my name',
 	route: 'graffiti'
@@ -117,9 +138,51 @@ exports.sneaker = {
 	route: 'sneaker'
 };
 
+exports.todoList = {
+	alt: 'A todo-list website',
+	route: 'todo-list'
+};
+
+exports.wordExistsDocs = {
+	alt: 'Documentation web page for the Word Exists package',
+	route: 'word-exists-docs'
+};
+
 exports.yoda = {
 	alt: 'My Yoda illustration',
 	route: 'yoda'
 };
 
-exports.imgs = [exports.albumBack, exports.albumCover, exports.albumDisc, exports.artShowPoster, exports.blueMoodBoard, exports.cards, exports.deerGiraffe, exports.geographistDisplay1, exports.geographistDisplay2, exports.geographistDisplay3, exports.graffiti, exports.hoth, exports.junkShip, exports.kowloonSF, exports.magazine, exports.mandala, exports.memRollDisplay, exports.natureEffect, exports.poster, exports.quizWatchDisplay1, exports.quizWatchDisplay2, exports.robot, exports.smhsMagazine, exports.sneaker, exports.yoda];
+exports.imgs = [
+	exports.albumBack,
+	exports.albumCover,
+	exports.albumDisc,
+	exports.artShowPoster,
+	exports.blueMoodBoard,
+	exports.calculator,
+	exports.cards,
+	exports.deerGiraffe,
+	exports.fccPortfolio1,
+	exports.fccPortfolio2,
+	exports.geographistDisplay1,
+	exports.geographistDisplay2,
+	exports.geographistDisplay3,
+	exports.googleHomepage,
+	exports.graffiti,
+	exports.hoth,
+	exports.junkShip,
+	exports.kowloonSF,
+	exports.magazine,
+	exports.mandala,
+	exports.memRollDisplay,
+	exports.natureEffect,
+	exports.poster,
+	exports.quizWatchDisplay1,
+	exports.quizWatchDisplay2,
+	exports.robot,
+	exports.smhsMagazine,
+	exports.sneaker,
+	exports.todoList,
+	exports.wordExistsDocs,
+	exports.yoda
+];

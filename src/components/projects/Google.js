@@ -4,6 +4,8 @@ import Project from '../Project';
 import skills from '../../skills';
 import tech from '../../tech';
 
+const { googleHomepage } = require('../../../img-data');
+
 const name = 'Google Homepage';
 const projSkills = [skills.frontEnd];
 const projTech = [tech.html, tech.css];
@@ -20,6 +22,7 @@ const Google = props => (
 			</p>
 		}
 		href='https://brandons42.github.io/google-homepage'
+		imgs={[googleHomepage]}
 		name={name}
 		onClickTag={props.onClickTag}
 		selectedTags={props.selectedTags}
