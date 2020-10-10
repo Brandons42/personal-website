@@ -20,6 +20,7 @@ const projTech = [
 const TodoList = props => (
 	<Project
 		code='https://github.com/Brandons42/todo-list'
+		cursor={props.cursor}
 		desc={
 			<p>
 				A quick and easy todo-list website that uses JavaScript's local storage

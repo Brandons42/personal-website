@@ -18,6 +18,7 @@ const projTech = [
 
 const WordSprint = props => (
 	<Project
+		cursor={props.cursor}
 		desc={
 			<p>
 				Quiz Watch, on the iOS App Store now, is the app you need to test and

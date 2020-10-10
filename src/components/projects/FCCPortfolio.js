@@ -13,6 +13,7 @@ const projTech = [tech.html, tech.css, tech.javaScript];
 const FCCPortfolio = props => (
 	<Project
 		code='https://github.com/Brandons42/fcc-portfolio'
+		cursor={props.cursor}
 		desc={
 			<p>
 				A simple portfolio I made to display the projects I made for the

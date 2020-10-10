@@ -9,6 +9,10 @@ const Tag = props => {
 		divStyle.push(styles.disabled);
 	}
 
+	if (props.cursor) {
+		divStyle.push(styles.cursor);
+	}
+
 	divStyle.push(props.selected ? styles.selected : styles.unselected);
 
 	return (

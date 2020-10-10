@@ -12,6 +12,7 @@ const projTech = [tech.reactNative, tech.javaScript];
 
 const MemRoll = props => (
 	<Project
+		cursor={props.cursor}
 		desc={
 			<p>
 				MemRoll allows you to take a journey to the past, while also testing

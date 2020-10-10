@@ -27,6 +27,7 @@ const Project = props => (
 			<div className={styles.techs}>
 				{props.tech.map((tech, i) => (
 					<Tag
+						cursor={props.cursor}
 						key={i}
 						onClick={props.onClickTag}
 						selected={props.selectedTags.includes(tech)}

@@ -11,6 +11,7 @@ const projTech = [tech.react, tech.gatsby, tech.scss, tech.javaScript];
 const Personal = props => (
 	<Project
 		code='https://github.com/Brandons42/personal-website'
+		cursor={props.cursor}
 		desc={<p>This website is live now, hosted with Netlify.</p>}
 		name={name}
 		onClickTag={props.onClickTag}

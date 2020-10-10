@@ -13,6 +13,7 @@ const projTech = [tech.html, tech.css];
 const Google = props => (
 	<Project
 		code='https://github.com/Brandons42/google-homepage'
+		cursor={props.cursor}
 		desc={
 			<p>
 				Hosted on Github Pages, this is a recreation of Google's homepage(in

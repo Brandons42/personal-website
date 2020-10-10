@@ -13,6 +13,7 @@ const projTech = [tech.html, tech.css, tech.javaScript, tech.parcel];
 const WordExistsDocs = props => (
 	<Project
 		code='https://github.com/Brandons42/word-exists-documentation'
+		cursor={props.cursor}
 		desc={
 			<p>
 				Documentation web page for the Word Exists NPM package, built for the{' '}

@@ -17,6 +17,7 @@ const projTech = [
 const Markdown = props => (
 	<Project
 		code='https://github.com/Brandons42/markdown'
+		cursor={props.cursor}
 		desc={
 			<p>
 				Hosted on Github Pages, this is a Markdown previewer built for the{' '}

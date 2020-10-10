@@ -20,6 +20,7 @@ const projTech = [
 const Calculator = props => (
 	<Project
 		code='https://github.com/Brandons42/calculator'
+		cursor={props.cursor}
 		desc={
 			<p>
 				Hosted on Github Pages, this is a simple calculator that obeys the order

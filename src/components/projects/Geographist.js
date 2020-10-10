@@ -21,6 +21,7 @@ const projTech = [
 
 const Geographist = props => (
 	<Project
+		cursor={props.cursor}
 		desc={
 			<p>
 				Geographist is an app for geography lovers everywhere on the iOS App

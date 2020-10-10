@@ -12,6 +12,7 @@ const projTech = [tech.javaScript];
 const WordExists = props => (
 	<Project
 		code='https://github.com/Brandons42/word-exists'
+		cursor={props.cursor}
 		desc={
 			<p>
 				An open source NPM package that checks if a word exists or not in

@@ -19,6 +19,7 @@ const projTech = [
 const QuizWatchDataAnalysis = props => (
 	<Project
 		code='https://github.com/Brandons42/quiz-watch-data'
+		cursor={props.cursor}
 		desc={
 			<p>
 				A data analysis project comparing the usage statistics from my Quiz

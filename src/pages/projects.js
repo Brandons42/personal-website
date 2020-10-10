@@ -143,6 +143,7 @@ export default class Projects extends React.Component {
 						<div className={styles.projects}>
 							{this.state.projects.map(({ Component }, i) => (
 								<Component
+									cursor
 									key={i}
 									onClickTag={this.selectTag}
 									selectedTags={this.state.tech}
