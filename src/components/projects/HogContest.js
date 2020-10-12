@@ -6,11 +6,11 @@ import tech from '../../tech';
 
 const { googleHomepage } = require('../../../img-data');
 
-const name = 'Google Homepage';
-const projSkills = [skills.frontEnd];
-const projTech = [tech.html, tech.css];
+const name = 'Hog Contest Algorithmzzzzzzzzzzzzzzzzzzz';
+const projSkills = [skills.algorithm, skills.machineLearning];
+const projTech = [tech.python, tech.xgboost, tech.pandas];
 
-const Google = props => (
+const HogContest = props => (
 	<Project
 		code='https://github.com/Brandons42/google-homepage'
 		cursor={props.cursor}
@@ -18,9 +18,7 @@ const Google = props => (
 			<p>
 				Hosted on Github Pages, this is a recreation of Google's homepage(in
 				2017) built for{' '}
-				<a href='https://www.theodinproject.com/' target='_blank'>
-					The Odin Project's
-				</a>{' '}
+				<a href='https://www.theodinproject.com/'>The Odin Project's</a>{' '}
 				curriculum.
 			</p>
 		}
@@ -34,10 +32,10 @@ const Google = props => (
 	/>
 );
 
-export default Google;
+export default HogContest;
 
-export const google = {
-	Component: Google,
+export const hogContest = {
+	Component: HogContest,
 	name,
 	projSkills,
 	projTech

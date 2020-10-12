@@ -38,6 +38,17 @@ exports.deerGiraffe = {
 	route: 'deer-giraffe'
 };
 
+exports.edXAgileCert = {
+	alt: 'My BerkeleyX Agile Development Certification',
+	route: 'edx-agile-cert'
+};
+
+exports.fccJSCert = {
+	alt:
+		'My freeCodeCamp JavaScript Algorithms and Data Structures Certification',
+	route: 'fcc-js-cert'
+};
+
 exports.fccPortfolio1 = {
 	alt: 'Portfolio web page from the freeCodeCamp curriculum',
 	route: 'fcc-portfolio1'
@@ -46,6 +57,11 @@ exports.fccPortfolio1 = {
 exports.fccPortfolio2 = {
 	alt: 'Portfolio web page from the freeCodeCamp curriculum',
 	route: 'fcc-portfolio2'
+};
+
+exports.fccRWDCert = {
+	alt: 'My freeCodeCamp Responsive Web Design Certification',
+	route: 'fcc-rwd-cert'
 };
 
 exports.geographistDisplay1 = {
@@ -78,9 +94,25 @@ exports.hoth = {
 	route: 'hoth'
 };
 
+exports.jpMorganChaseCert = {
+	alt:
+		'My JPMorgan Chase Software Engineering Virtual Internship Certification',
+	route: 'jpmorgan-chase-cert'
+};
+
 exports.junkShip = {
 	alt: 'A junk ship',
 	route: 'junk-ship'
+};
+
+exports.kaggleMLCert = {
+	alt: 'My Kaggle Intro to Machine Learning Certification',
+	route: 'kaggle-ml-cert'
+};
+
+exports.kagglePythonCert = {
+	alt: 'My Kaggle Python Certification',
+	route: 'kaggle-python-cert'
 };
 
 exports.kowloonSF = {
@@ -143,6 +175,11 @@ exports.todoList = {
 	route: 'todo-list'
 };
 
+exports.udacityDRLNDCert = {
+	alt: 'My Udacity Deep Reinforcement Learning Nanodegree Certificate',
+	route: 'udacity-drlnd-cert'
+};
+
 exports.wordExistsDocs = {
 	alt: 'Documentation web page for the Word Exists package',
 	route: 'word-exists-docs'
@@ -162,15 +199,21 @@ exports.imgs = [
 	exports.calculator,
 	exports.cards,
 	exports.deerGiraffe,
+	exports.edXAgileCert,
+	exports.fccJSCert,
 	exports.fccPortfolio1,
 	exports.fccPortfolio2,
+	exports.fccRWDCert,
 	exports.geographistDisplay1,
 	exports.geographistDisplay2,
 	exports.geographistDisplay3,
 	exports.googleHomepage,
 	exports.graffiti,
 	exports.hoth,
+	exports.jpMorganChaseCert,
 	exports.junkShip,
+	exports.kaggleMLCert,
+	exports.kagglePythonCert,
 	exports.kowloonSF,
 	exports.magazine,
 	exports.mandala,
@@ -183,6 +226,7 @@ exports.imgs = [
 	exports.smhsMagazine,
 	exports.sneaker,
 	exports.todoList,
+	exports.udacityDRLNDCert,
 	exports.wordExistsDocs,
 	exports.yoda
 ];

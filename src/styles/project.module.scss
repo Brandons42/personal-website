@@ -13,6 +13,8 @@
 
 .container {
 	@extend %white;
+
+	padding-top: $navh;
 }
 
 /*.image {

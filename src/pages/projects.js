@@ -2,62 +2,73 @@ import React from 'react';
 
 import Layout from '../components/Layout';
 import Tag from '../components/Tag';
+import programs from '../programs';
+import projects from '../projects';
 import skills from '../skills';
 import styles from '../styles/projects.module.scss';
 import tech from '../tech';
 
-import { calculator } from '../components/projects/Calculator';
-import { fccPortfolio } from '../components/projects/FCCPortfolio';
-import { geographist } from '../components/projects/Geographist';
-import { google } from '../components/projects/Google';
-import { markdown } from '../components/projects/Markdown';
-import { memRoll } from '../components/projects/MemRoll';
-import { personal } from '../components/projects/Personal';
-import { quizWatch } from '../components/projects/QuizWatch';
-import { quizWatchDataAnalysis } from '../components/projects/QuizWatchDataAnalysis';
-import { todoList } from '../components/projects/TodoList';
-import { wordExists } from '../components/projects/WordExists';
-import { wordExistsDocs } from '../components/projects/WordExistsDocs';
-import { wordSprint } from '../components/projects/WordSprint';
-
 const all = 'All';
 
-const projects = [
-	calculator,
-	fccPortfolio,
-	geographist,
-	google,
-	markdown,
-	memRoll,
-	personal,
-	quizWatch,
-	quizWatchDataAnalysis,
-	todoList,
-	wordExists,
-	wordExistsDocs,
-	wordSprint
-];
-
+const programList = Object.values(programs);
 const skillList = Object.values(skills);
 const techList = Object.values(tech);
 
 export default class Projects extends React.Component {
-	state = { projects, skill: all, tech: [] };
+	constructor() {
+		super();
+
+		this.state = { projects, skill: all, tech: [] };
+
+		const params = new URLSearchParams(document.location.search.substring(1));
+		const program = params.get('program');
+
+		if (
+			program &&
+			programList.map(programObj => programObj.name).includes(program)
+		) {
+			this.state.program = program;
+			this.state.projects = this.filterByProgram(this.state.projects);
+		}
+	}
+
+	filterByProgram = (projects, program = this.state.program) =>
+		program
+			? projects.filter(
+					project => project.projProgram && project.projProgram.name === program
+			  )
+			: projects;
+
+	filterBySkill = (projects, skill = this.state.skill) =>
+		skill === all
+			? projects
+			: projects.filter(({ projSkills }) => projSkills.includes(skill));
+
+	filterByTech = (projects, tech = this.state.tech) =>
+		tech.length === 0
+			? projects
+			: projects.filter(({ projTech }) =>
+					tech.some(tag => projTech.includes(tag))
+			  );
+
+	selectProgram = program => {
+		const programState = this.state.program === program ? false : program;
+
+		let nextProjects = projects;
+
+		nextProjects = this.filterByProgram(nextProjects, programState);
+		nextProjects = this.filterBySkill(nextProjects);
+		nextProjects = this.filterByTech(nextProjects);
+
+		this.setState({ projects: nextProjects, program: programState });
+	};
 
 	selectSkill = skill => {
 		let nextProjects = projects;
 
-		if (skill !== all) {
-			nextProjects = nextProjects.filter(({ projSkills }) =>
-				projSkills.includes(skill)
-			);
-		}
-
-		if (this.state.tech.length > 0) {
-			nextProjects = nextProjects.filter(({ projTech }) =>
-				this.state.tech.some(tag => projTech.includes(tag))
-			);
-		}
+		nextProjects = this.filterByProgram(nextProjects);
+		nextProjects = this.filterBySkill(nextProjects, skill);
+		nextProjects = this.filterByTech(nextProjects);
 
 		this.setState({ projects: nextProjects, skill });
 	};
@@ -73,17 +84,9 @@ export default class Projects extends React.Component {
 
 		let nextProjects = projects;
 
-		if (this.state.skill !== all) {
-			nextProjects = nextProjects.filter(({ projSkills }) =>
-				projSkills.includes(this.state.skill)
-			);
-		}
-
-		if (techState.length > 0) {
-			nextProjects = nextProjects.filter(({ projTech }) =>
-				techState.some(tag => projTech.includes(tag))
-			);
-		}
+		nextProjects = this.filterByProgram(nextProjects);
+		nextProjects = this.filterBySkill(nextProjects);
+		nextProjects = this.filterByTech(nextProjects, techState);
 
 		this.setState({
 			projects: nextProjects,
@@ -101,6 +104,18 @@ export default class Projects extends React.Component {
 					</div>
 					<div className={styles.content}>
 						<div className={styles.navBar}>
+							<h3>Filter by program</h3>
+							<div className={styles.indent}>
+								{programList.map((program, i) => (
+									<img
+										alt={program.name}
+										className={styles.programImg}
+										key={i}
+										onClick={() => this.selectProgram(program.name)}
+										src={program.src}
+									/>
+								))}
+							</div>
 							<h3>Filter by skills</h3>
 							<div className={styles.indent}>
 								{[all, ...skillList].map((text, i) => (

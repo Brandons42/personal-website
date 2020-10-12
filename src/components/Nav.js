@@ -19,9 +19,14 @@ const Nav = props => (
 					My developer profile
 				</Link>
 			) : (
-				<Link className={styles.link} to='/projects'>
-					Projects
-				</Link>
+				<>
+					<Link className={styles.link} to='/online-courses'>
+						Online Courses
+					</Link>
+					<Link className={styles.link} to='/projects'>
+						Projects
+					</Link>
+				</>
 			)}
 			<a className={styles.buttonLink} href='#contact'>
 				<button className={styles.button}>Contact</button>

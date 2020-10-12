@@ -10,19 +10,26 @@ import '../styles/arrow-overide.scss';
 
 const Project = props => (
 	<div className={styles.container} id={props.name}>
-		{props.href ? (
-			<OutboundLink href={props.href}>
+		<div className={styles.titleContainer}>
+			{props.href ? (
+				<OutboundLink href={props.href} target='_blank'>
+					<h3>{props.name}</h3>
+				</OutboundLink>
+			) : (
 				<h3>{props.name}</h3>
-			</OutboundLink>
-		) : (
-			<h3>{props.name}</h3>
-		)}
+			)}
+			{/*props.program && (
+				<OutboundLink href={props.href} target='_blank'>
+					<img alt={props.}
+				</OutboundLink>
+			)*/}
+		</div>
 		{props.code && (
-			<OutboundLink className={styles.code} href={props.code}>
+			<OutboundLink className={styles.code} href={props.code} target='_blank'>
 				Check out the code
 			</OutboundLink>
 		)}
-		<i className={styles.spaced}>{props.skills}</i>
+		<i className={styles.spaced}>{props.skills.join(', ')}</i>
 		{props.tech && (
 			<div className={styles.techs}>
 				{props.tech.map((tech, i) => (
