@@ -2,14 +2,10 @@
 
 .content {
 	@extend %white;
-
-	h4 > a {
-		@extend %subtitle;
-	}
 }
 
-.img {
-	width: 50vw;
+.indent {
+	margin-left: 20px;
 }
 
 .title {

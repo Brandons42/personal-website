@@ -21,6 +21,12 @@ $navh: 15vh;
 	font-size: 60px;
 }
 
+%subtitle {
+	margin-top: 3vh;
+	font-family: $roboto;
+	font-size: 30px;
+}
+
 %container {
 	padding: 5vh 10vw;
 	//width: 100vw;
@@ -33,15 +39,13 @@ $navh: 15vh;
 	}
 
 	h3 {
-		margin-top: 3vh;
-		font-family: $roboto;
+		@extend %subtitle;
+
 		font-size: 40px;
 	}
 
 	h4 {
-		margin-top: 3vh;
-		font-family: $roboto;
-		font-size: 30px;
+		@extend %subtitle;
 	}
 
 	a,

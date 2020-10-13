@@ -18,6 +18,18 @@ exports.artShowPoster = {
 	route: 'art-show-poster'
 };
 
+exports.bananaNavigator = {
+	alt: 'A banana-collector agent',
+	ext: 'gif',
+	route: 'banana-navigator'
+};
+
+exports.bananaNavigatorGraph = {
+	alt: 'Results for my banana-collecting agent',
+	ext: 'svg',
+	route: 'banana-navigator-graph'
+};
+
 exports.blueMoodBoard = {
 	alt: 'A mood board representing blue colors',
 	route: 'blue-mood-board'
@@ -31,6 +43,17 @@ exports.calculator = {
 exports.cards = {
 	alt: 'A series of cards with unique designs',
 	route: 'cards'
+};
+
+exports.continuousControl = {
+	alt: 'Robotic arm agents',
+	ext: 'gif',
+	route: 'continuous-control'
+};
+
+exports.continuousControlGraph = {
+	alt: 'Results for my robotic arm agents',
+	route: 'continuous-control-graph'
 };
 
 exports.deerGiraffe = {
@@ -130,6 +153,11 @@ exports.mandala = {
 	route: 'mandala'
 };
 
+exports.markdownPreviewer = {
+	alt: 'Markdown previewer web page',
+	route: 'markdown-previewer'
+};
+
 exports.memRollDisplay = {
 	alt: 'Screens from the MemRoll iOS app',
 	route: 'memroll-display'
@@ -143,6 +171,11 @@ exports.natureEffect = {
 exports.poster = {
 	alt: 'My propaganda poster',
 	route: 'poster'
+};
+
+exports.quizWatchDataAnalysis = {
+	alt: 'Data analysis web page for the Quiz Watch app',
+	route: 'quiz-watch-data-analysis'
 };
 
 exports.quizWatchDisplay1 = {
@@ -170,6 +203,17 @@ exports.sneaker = {
 	route: 'sneaker'
 };
 
+exports.tennis = {
+	alt: 'A tennis-playing agent',
+	ext: 'gif',
+	route: 'tennis'
+};
+
+exports.tennisGraph = {
+	alt: 'Results for my tennis-playing agent',
+	route: 'tennis-graph'
+};
+
 exports.todoList = {
 	alt: 'A todo-list website',
 	route: 'todo-list'
@@ -177,6 +221,7 @@ exports.todoList = {
 
 exports.udacityDRLNDCert = {
 	alt: 'My Udacity Deep Reinforcement Learning Nanodegree Certificate',
+	ext: 'svg',
 	route: 'udacity-drlnd-cert'
 };
 
@@ -195,9 +240,13 @@ exports.imgs = [
 	exports.albumCover,
 	exports.albumDisc,
 	exports.artShowPoster,
+	exports.bananaNavigator,
+	exports.bananaNavigatorGraph,
 	exports.blueMoodBoard,
 	exports.calculator,
 	exports.cards,
+	exports.continuousControl,
+	exports.continuousControlGraph,
 	exports.deerGiraffe,
 	exports.edXAgileCert,
 	exports.fccJSCert,
@@ -217,14 +266,18 @@ exports.imgs = [
 	exports.kowloonSF,
 	exports.magazine,
 	exports.mandala,
+	exports.markdownPreviewer,
 	exports.memRollDisplay,
 	exports.natureEffect,
 	exports.poster,
+	exports.quizWatchDataAnalysis,
 	exports.quizWatchDisplay1,
 	exports.quizWatchDisplay2,
 	exports.robot,
 	exports.smhsMagazine,
 	exports.sneaker,
+	exports.tennis,
+	exports.tennisGraph,
 	exports.todoList,
 	exports.udacityDRLNDCert,
 	exports.wordExistsDocs,

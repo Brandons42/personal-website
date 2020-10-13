@@ -5,6 +5,11 @@ import programs from '../../programs';
 import skills from '../../skills';
 import tech from '../../tech';
 
+const {
+	continuousControl: continuousControlIMG,
+	continuousControlGraph
+} = require('../../../img-data');
+
 const name = 'Continuous Control';
 const projProgram = programs.drlnd;
 const projSkills = [skills.deepReinforcementLearning, skills.deepLearning];
@@ -22,6 +27,7 @@ const ContinuousControl = props => (
 			</p>
 		}
 		href='https://github.com/Brandons42/continuous_control/blob/master/continuous_control_report.pdf'
+		imgs={[continuousControlIMG, continuousControlGraph]}
 		name={name}
 		onClickTag={props.onClickTag}
 		program={projProgram}

@@ -5,6 +5,10 @@ import { quizWatch } from './QuizWatch';
 import skills from '../../skills';
 import tech from '../../tech';
 
+const {
+	quizWatchDataAnalysis: quizWatchDataAnalysisIMG
+} = require('../../../img-data');
+
 const name = 'Quiz Watch Data Analysis';
 const projSkills = [skills.frontEnd];
 const projTech = [
@@ -27,6 +31,7 @@ const QuizWatchDataAnalysis = props => (
 			</p>
 		}
 		href='https://brandons42.github.io/quiz-watch-data/'
+		imgs={[quizWatchDataAnalysisIMG]}
 		name={name}
 		onClickTag={props.onClickTag}
 		related={[quizWatch.name]}

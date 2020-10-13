@@ -11,7 +11,7 @@ const IMGDisplay = ({ pageContext: { img } }) => (
 		<img
 			alt={img.alt}
 			className={styles.image}
-			src={require(`../images/${img.route}.png`)}
+			src={require(`../images/${img.route}.${img.ext ? img.ext : 'png'}`)}
 		/>
 	</div>
 );

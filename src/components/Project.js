@@ -74,7 +74,9 @@ const Project = props => (
 						<Image
 							alt={img.alt}
 							route={img.route}
-							src={require(`../images/${img.route}.png`)}
+							src={require(`../images/${img.route}.${
+								img.ext ? img.ext : 'png'
+							}`)}
 						/>
 					</div>
 				))}

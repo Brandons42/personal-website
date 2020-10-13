@@ -5,6 +5,8 @@ import programs from '../../programs';
 import skills from '../../skills';
 import tech from '../../tech';
 
+const { tennis: tennisIMG, tennisGraph } = require('../../../img-data');
+
 const name = 'Tennis';
 const projProgram = programs.drlnd;
 const projSkills = [skills.deepReinforcementLearning, skills.deepLearning];
@@ -22,6 +24,7 @@ const Tennis = props => (
 			</p>
 		}
 		href='https://github.com/Brandons42/tennis/blob/master/tennis_report.pdf'
+		imgs={[tennisIMG, tennisGraph]}
 		name={name}
 		onClickTag={props.onClickTag}
 		program={projProgram}

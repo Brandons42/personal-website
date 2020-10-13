@@ -5,6 +5,11 @@ import programs from '../../programs';
 import skills from '../../skills';
 import tech from '../../tech';
 
+const {
+	bananaNavigator: bananaNavigatorIMG,
+	bananaNavigatorGraph
+} = require('../../../img-data');
+
 const name = 'Banana Navigator';
 const projProgram = programs.drlnd;
 const projSkills = [skills.deepReinforcementLearning, skills.deepLearning];
@@ -22,6 +27,7 @@ const BananaNavigator = props => (
 			</p>
 		}
 		href='https://github.com/Brandons42/banana_navigator/blob/master/banana_navigator_report.pdf'
+		imgs={[bananaNavigatorIMG, bananaNavigatorGraph]}
 		name={name}
 		onClickTag={props.onClickTag}
 		program={projProgram}

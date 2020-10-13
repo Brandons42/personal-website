@@ -20,6 +20,9 @@ const Nav = props => (
 				</Link>
 			) : (
 				<>
+					<Link className={styles.link} to='/college'>
+						College
+					</Link>
 					<Link className={styles.link} to='/online-courses'>
 						Online Courses
 					</Link>

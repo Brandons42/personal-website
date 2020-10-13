@@ -5,6 +5,8 @@ import programs from '../../programs';
 import skills from '../../skills';
 import tech from '../../tech';
 
+const { markdownPreviewer } = require('../../../img-data');
+
 const name = 'Markdown Previewer';
 const projProgram = programs.freeCodeCamp;
 const projSkills = [skills.frontEnd];
@@ -30,6 +32,7 @@ const Markdown = props => (
 			</p>
 		}
 		href='https://brandons42.github.io/markdown'
+		imgs={[markdownPreviewer]}
 		name={name}
 		onClickTag={props.onClickTag}
 		program={projProgram}
