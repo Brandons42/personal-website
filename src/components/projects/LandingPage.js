@@ -5,17 +5,17 @@ import programs from '../../programs';
 import skills from '../../skills';
 import tech from '../../tech';
 
-const { tributePage: tributePageIMG } = require('../../../img-data');
+const { aif } = require('../../../img-data');
 
-const name = 'Tribute Pagezzzzzzzzzz';
+const name = 'Landing Pagezzzzzzzzzz';
 const projProgram = programs.freeCodeCamp;
 const projSkills = [skills.frontEnd];
-const projTech = [tech.html, tech.css, tech.parcel];
+const projTech = [tech.html, tech.css, tech.javaScript, tech.gulp];
 
-const TributePage = props => (
+const LandingPage = props => (
 	<Project
 		{...props}
-		code='https://github.com/Brandons42/ronald-bagby-tribute-page'
+		code='https://github.com/Brandons42/american-imperial-faction'
 		desc={
 			<p>
 				Quiz Watch, on the iOS App Store now, is the app you need to test and
@@ -27,8 +27,8 @@ const TributePage = props => (
 				questions you're interested in reviewing later on.
 			</p>
 		}
-		href='https://brandons42.github.io/ronald-bagby-tribute-page/'
-		imgs={[tributePageIMG]}
+		href='https://brandons42.github.io/american-imperial-faction/?fcc'
+		imgs={[aif]}
 		name={name}
 		program={projProgram}
 		skills={projSkills}
@@ -36,10 +36,10 @@ const TributePage = props => (
 	/>
 );
 
-export default TributePage;
+export default LandingPage;
 
-export const tributePage = {
-	Component: TributePage,
+export const landingPage = {
+	Component: LandingPage,
 	name,
 	projProgram,
 	projSkills,

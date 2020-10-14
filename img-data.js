@@ -1,3 +1,8 @@
+exports.aif = {
+	alt: 'American Imperial Faction landing web page',
+	route: 'landing'
+};
+
 exports.albumBack = {
 	alt: 'An album back design',
 	route: 'album-back'
@@ -218,6 +223,11 @@ exports.sneaker = {
 	route: 'sneaker'
 };
 
+exports.survey = {
+	alt: 'My survey form web page',
+	route: 'survey'
+};
+
 exports.tennis = {
 	alt: 'A tennis-playing agent',
 	ext: 'gif',
@@ -232,6 +242,11 @@ exports.tennisGraph = {
 exports.todoList = {
 	alt: 'A todo-list website',
 	route: 'todo-list'
+};
+
+exports.tributePage = {
+	alt: 'My tribute web page',
+	route: 'tribute'
 };
 
 exports.udacityDRLNDCert = {
@@ -256,6 +271,7 @@ exports.yoda = {
 };
 
 exports.imgs = [
+	exports.aif,
 	exports.albumBack,
 	exports.albumCover,
 	exports.albumDisc,
@@ -299,9 +315,11 @@ exports.imgs = [
 	exports.schemeArt,
 	exports.smhsMagazine,
 	exports.sneaker,
+	exports.survey,
 	exports.tennis,
 	exports.tennisGraph,
 	exports.todoList,
+	exports.tributePage,
 	exports.udacityDRLNDCert,
 	exports.wordExistsDocs,
 	exports.wordSprintLandingPage,
