@@ -25,8 +25,10 @@ const FCCPortfolio = props => (
 		href='https://brandons42.github.io/fcc-portfolio/'
 		imgs={[fccPortfolio1, fccPortfolio2]}
 		name={name}
+		onClickProgram={props.onClickProgram}
 		onClickTag={props.onClickTag}
 		program={projProgram}
+		programState={props.programState}
 		selectedTags={props.selectedTags}
 		skills={projSkills}
 		tech={projTech}

@@ -1,6 +1,7 @@
 import React from 'react';
 
 import Layout from '../components/Layout';
+import ProgramLogo from '../components/ProgramLogo';
 import Tag from '../components/Tag';
 import programs from '../programs';
 import projects from '../projects';
@@ -107,12 +108,11 @@ export default class Projects extends React.Component {
 							<h3>Filter by program</h3>
 							<div className={styles.indent}>
 								{programList.map((program, i) => (
-									<img
-										alt={program.name}
-										className={styles.programImg}
+									<ProgramLogo
 										key={i}
-										onClick={() => this.selectProgram(program.name)}
-										src={program.src}
+										onClick={this.selectProgram}
+										program={program}
+										state={this.state.program}
 									/>
 								))}
 							</div>
@@ -160,7 +160,9 @@ export default class Projects extends React.Component {
 								<Component
 									cursor
 									key={i}
+									onClickProgram={this.selectProgram}
 									onClickTag={this.selectTag}
+									programState={this.state.program}
 									selectedTags={this.state.tech}
 								/>
 							))}

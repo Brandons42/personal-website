@@ -27,7 +27,9 @@ const Tennis = props => (
 		imgs={[tennisIMG, tennisGraph]}
 		name={name}
 		onClickTag={props.onClickTag}
+		onClickProgram={props.onClickProgram}
 		program={projProgram}
+		programState={props.programState}
 		selectedTags={props.selectedTags}
 		skills={projSkills}
 		tech={projTech}

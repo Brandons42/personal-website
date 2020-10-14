@@ -29,8 +29,10 @@ const BananaNavigator = props => (
 		href='https://github.com/Brandons42/banana_navigator/blob/master/banana_navigator_report.pdf'
 		imgs={[bananaNavigatorIMG, bananaNavigatorGraph]}
 		name={name}
+		onClickProgram={props.onClickProgram}
 		onClickTag={props.onClickTag}
 		program={projProgram}
+		programState={props.programState}
 		selectedTags={props.selectedTags}
 		skills={projSkills}
 		tech={projTech}

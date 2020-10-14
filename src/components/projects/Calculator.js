@@ -36,8 +36,10 @@ const Calculator = props => (
 		href='https://brandons42.github.io/calculator'
 		imgs={[calculatorImg]}
 		name={name}
+		onClickProgram={props.onClickProgram}
 		onClickTag={props.onClickTag}
 		program={projProgram}
+		programState={props.programState}
 		selectedTags={props.selectedTags}
 		skills={projSkills}
 		tech={projTech}

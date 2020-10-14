@@ -2,9 +2,10 @@ import React from 'react';
 import { OutboundLink } from 'gatsby-plugin-google-analytics';
 import { Carousel } from 'react-responsive-carousel';
 
-//import DynamicImage from '../components/DynamicImage';
-import Image from '../components/Image';
-import Tag from '../components/Tag';
+//import DynamicImage from './DynamicImage';
+import Image from './Image';
+import ProgramLogo from './ProgramLogo';
+import Tag from './Tag';
 import styles from '../styles/project.module.scss';
 import '../styles/arrow-overide.scss';
 
@@ -18,11 +19,13 @@ const Project = props => (
 			) : (
 				<h3>{props.name}</h3>
 			)}
-			{/*props.program && (
-				<OutboundLink href={props.href} target='_blank'>
-					<img alt={props.}
-				</OutboundLink>
-			)*/}
+			{props.program && (
+				<ProgramLogo
+					onClick={props.onClickProgram}
+					program={props.program}
+					state={props.programState}
+				/>
+			)}
 		</div>
 		{props.code && (
 			<OutboundLink className={styles.code} href={props.code} target='_blank'>

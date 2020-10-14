@@ -1,0 +1,36 @@
+@import 'vars';
+
+.active {
+	border: 3px solid $blue;
+}
+
+.programImg {
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: 22px;
+	border-radius: 15px;
+	box-shadow: 0 0 5px $black;
+	cursor: pointer;
+	display: inline-block;
+	height: 30px;
+	width: 30px;
+
+	&:hover {
+		box-shadow: 0 0 10px $black;
+	}
+
+	&:active {
+		box-shadow: 0 0 2px $black;
+	}
+}
+
+.tooltip {
+	font-family: $mont;
+	font-size: 12px;
+	text-align: center;
+}
+
+.wrapper {
+	display: inline-block;
+	margin-right: 10px;
+}

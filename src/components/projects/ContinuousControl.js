@@ -29,8 +29,10 @@ const ContinuousControl = props => (
 		href='https://github.com/Brandons42/continuous_control/blob/master/continuous_control_report.pdf'
 		imgs={[continuousControlIMG, continuousControlGraph]}
 		name={name}
+		onClickProgram={props.onClickProgram}
 		onClickTag={props.onClickTag}
 		program={projProgram}
+		programState={props.programState}
 		selectedTags={props.selectedTags}
 		skills={projSkills}
 		tech={projTech}

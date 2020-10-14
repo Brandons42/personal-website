@@ -1,11 +1,14 @@
+import drnldSrc from './images/udacity-logo.png';
+import freeCodeCampSrc from './images/fcc-logo.png';
+
 const programs = {
 	drlnd: {
-		name: 'Udacity Deep Reinforcement Learning Nanodegree',
-		src: require('./images/udacity-logo.png')
+		name: 'Udacity',
+		src: drnldSrc
 	},
 	freeCodeCamp: {
 		name: 'freeCodeCamp',
-		src: require('./images/fcc-logo.png')
+		src: freeCodeCampSrc
 	}
 };
 
