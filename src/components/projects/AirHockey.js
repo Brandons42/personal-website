@@ -11,7 +11,7 @@ const {
 } = require('../../../img-data');
 
 const name = 'Air Hockeyzzzzzzz';
-const projProgram = programs.drlnd;
+const projProgram = programs.cssi;
 const projSkills = [skills.deepReinforcementLearning, skills.deepLearning];
 const projTech = [tech.pytorch, tech.unityAgents, tech.python];
 
