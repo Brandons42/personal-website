@@ -12,7 +12,7 @@ const projTech = [tech.reactNative, tech.javaScript];
 
 const MemRoll = props => (
 	<Project
-		cursor={props.cursor}
+		{...props}
 		desc={
 			<p>
 				MemRoll allows you to take a journey to the past, while also testing
@@ -23,8 +23,6 @@ const MemRoll = props => (
 		href='https://apps.apple.com/us/app/memroll/id1459782811'
 		imgs={[memRollDisplay]}
 		name={name}
-		onClickTag={props.onClickTag}
-		selectedTags={props.selectedTags}
 		skills={projSkills}
 		tech={projTech}
 	/>

@@ -15,8 +15,8 @@ const projTech = [tech.html, tech.css, tech.javaScript, tech.parcel];
 
 const WordExistsDocs = props => (
 	<Project
+		{...props}
 		code='https://github.com/Brandons42/word-exists-documentation'
-		cursor={props.cursor}
 		desc={
 			<p>
 				Documentation web page for the Word Exists NPM package, built for the{' '}
@@ -29,12 +29,8 @@ const WordExistsDocs = props => (
 		href='https://brandons42.github.io/word-exists-documentation/'
 		imgs={[wordExistsDocsIMG]}
 		name={name}
-		onClickProgram={props.onClickProgram}
-		onClickTag={props.onClickTag}
 		program={projProgram}
-		programState={props.programState}
 		related={[wordExists.name]}
-		selectedTags={props.selectedTags}
 		skills={projSkills}
 		tech={projTech}
 	/>

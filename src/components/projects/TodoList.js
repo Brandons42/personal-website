@@ -19,8 +19,8 @@ const projTech = [
 
 const TodoList = props => (
 	<Project
+		{...props}
 		code='https://github.com/Brandons42/todo-list'
-		cursor={props.cursor}
 		desc={
 			<p>
 				A quick and easy todo-list website that uses JavaScript's local storage
@@ -30,8 +30,6 @@ const TodoList = props => (
 		href='https://brandons42.github.io/todo-list/'
 		imgs={[todoListIMG]}
 		name={name}
-		onClickTag={props.onClickTag}
-		selectedTags={props.selectedTags}
 		skills={projSkills}
 		tech={projTech}
 	/>

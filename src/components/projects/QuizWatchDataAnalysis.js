@@ -22,8 +22,8 @@ const projTech = [
 
 const QuizWatchDataAnalysis = props => (
 	<Project
+		{...props}
 		code='https://github.com/Brandons42/quiz-watch-data'
-		cursor={props.cursor}
 		desc={
 			<p>
 				A data analysis project comparing the usage statistics from my Quiz
@@ -33,9 +33,7 @@ const QuizWatchDataAnalysis = props => (
 		href='https://brandons42.github.io/quiz-watch-data/'
 		imgs={[quizWatchDataAnalysisIMG]}
 		name={name}
-		onClickTag={props.onClickTag}
 		related={[quizWatch.name]}
-		selectedTags={props.selectedTags}
 		skills={projSkills}
 		tech={projTech}
 	/>

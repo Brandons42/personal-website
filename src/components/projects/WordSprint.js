@@ -3,6 +3,7 @@ import React from 'react';
 import Project from '../Project';
 import skills from '../../skills';
 import tech from '../../tech';
+import { wordSprintLandingPage } from './WordSprintLandingPage';
 
 const { quizWatchDisplay1, quizWatchDisplay2 } = require('../../../img-data');
 
@@ -18,7 +19,7 @@ const projTech = [
 
 const WordSprint = props => (
 	<Project
-		cursor={props.cursor}
+		{...props}
 		desc={
 			<p>
 				Quiz Watch, on the iOS App Store now, is the app you need to test and
@@ -33,8 +34,7 @@ const WordSprint = props => (
 		href='https://apps.apple.com/us/app/word-sprint-rhymes-synonyms/id1502860378'
 		imgs={[quizWatchDisplay1, quizWatchDisplay2]}
 		name={name}
-		onClickTag={props.onClickTag}
-		selectedTags={props.selectedTags}
+		related={[wordSprintLandingPage.name]}
 		skills={projSkills}
 		tech={projTech}
 	/>

@@ -104,57 +104,59 @@ export default class Projects extends React.Component {
 						<p>Hi</p>
 					</div>
 					<div className={styles.content}>
-						<div className={styles.navBar}>
-							<h3>Filter by program</h3>
-							<div className={styles.indent}>
-								{programList.map((program, i) => (
-									<ProgramLogo
-										key={i}
-										onClick={this.selectProgram}
-										program={program}
-										state={this.state.program}
-									/>
-								))}
+						{window.innerWidth > 1100 && (
+							<div className={styles.navBar}>
+								<h3>Filter by program</h3>
+								<div className={styles.indent}>
+									{programList.map((program, i) => (
+										<ProgramLogo
+											key={i}
+											onClick={this.selectProgram}
+											program={program}
+											state={this.state.program}
+										/>
+									))}
+								</div>
+								<h3>Filter by skills</h3>
+								<div className={styles.indent}>
+									{[all, ...skillList].map((text, i) => (
+										<div
+											className={[
+												styles.skill,
+												this.state.skill === text
+													? styles.selectedSkill
+													: styles.unselectedSkill
+											].join(' ')}
+											key={i}
+											onClick={() => this.selectSkill(text)}
+										>
+											<p>{text}</p>
+										</div>
+									))}
+								</div>
+								<h3>Filter by technologies</h3>
+								<div className={styles.indent}>
+									{techList.map((text, i) => (
+										<Tag
+											key={i}
+											onClick={this.selectTag}
+											selected={this.state.tech.includes(text)}
+											text={text}
+										/>
+									))}
+								</div>
+								<h3>Projects</h3>
+								<div className={styles.indent}>
+									{this.state.projects.map(({ name }, i) => (
+										<p key={i}>
+											<a className={styles.link} href={'#' + name}>
+												{name}
+											</a>
+										</p>
+									))}
+								</div>
 							</div>
-							<h3>Filter by skills</h3>
-							<div className={styles.indent}>
-								{[all, ...skillList].map((text, i) => (
-									<div
-										className={[
-											styles.skill,
-											this.state.skill === text
-												? styles.selectedSkill
-												: styles.unselectedSkill
-										].join(' ')}
-										key={i}
-										onClick={() => this.selectSkill(text)}
-									>
-										<p>{text}</p>
-									</div>
-								))}
-							</div>
-							<h3>Filter by technologies</h3>
-							<div className={styles.indent}>
-								{techList.map((text, i) => (
-									<Tag
-										key={i}
-										onClick={this.selectTag}
-										selected={this.state.tech.includes(text)}
-										text={text}
-									/>
-								))}
-							</div>
-							<h3>Projects</h3>
-							<div className={styles.indent}>
-								{this.state.projects.map(({ name }, i) => (
-									<p key={i}>
-										<a className={styles.link} href={'#' + name}>
-											{name}
-										</a>
-									</p>
-								))}
-							</div>
-						</div>
+						)}
 						<div className={styles.projects}>
 							{this.state.projects.map(({ Component }, i) => (
 								<Component

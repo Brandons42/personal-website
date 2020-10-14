@@ -12,8 +12,8 @@ const projTech = [tech.html, tech.css];
 
 const Google = props => (
 	<Project
+		{...props}
 		code='https://github.com/Brandons42/google-homepage'
-		cursor={props.cursor}
 		desc={
 			<p>
 				Hosted on Github Pages, this is a recreation of Google's homepage(in
@@ -27,8 +27,6 @@ const Google = props => (
 		href='https://brandons42.github.io/google-homepage'
 		imgs={[googleHomepage]}
 		name={name}
-		onClickTag={props.onClickTag}
-		selectedTags={props.selectedTags}
 		skills={projSkills}
 		tech={projTech}
 	/>

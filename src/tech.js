@@ -6,6 +6,7 @@ const tech = {
 	gatsby: 'Gatsby.js',
 	gulp: 'gulp.js',
 	html: 'HTML',
+	java: 'Java',
 	javaScript: 'JavaScript',
 	pandas: 'Pandas',
 	parcel: 'Parcel',
@@ -15,6 +16,7 @@ const tech = {
 	redux: 'Redux',
 	reactNative: 'React Native',
 	reactNavigation: 'React Navigation',
+	scheme: 'Scheme',
 	scss: 'SCSS/SASS',
 	unityAgents: 'Unity Agents',
 	xgboost: 'XGBoost'

@@ -20,8 +20,8 @@ const projTech = [
 
 const Markdown = props => (
 	<Project
+		{...props}
 		code='https://github.com/Brandons42/markdown'
-		cursor={props.cursor}
 		desc={
 			<p>
 				Hosted on Github Pages, this is a Markdown previewer built for the{' '}
@@ -34,11 +34,7 @@ const Markdown = props => (
 		href='https://brandons42.github.io/markdown'
 		imgs={[markdownPreviewer]}
 		name={name}
-		onClickProgram={props.onClickProgram}
-		onClickTag={props.onClickTag}
 		program={projProgram}
-		programState={props.programState}
-		selectedTags={props.selectedTags}
 		skills={projSkills}
 		tech={projTech}
 	/>

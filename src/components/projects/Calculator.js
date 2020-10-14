@@ -21,8 +21,8 @@ const projTech = [
 
 const Calculator = props => (
 	<Project
+		{...props}
 		code='https://github.com/Brandons42/calculator'
-		cursor={props.cursor}
 		desc={
 			<p>
 				Hosted on Github Pages, this is a simple calculator that obeys the order
@@ -36,11 +36,7 @@ const Calculator = props => (
 		href='https://brandons42.github.io/calculator'
 		imgs={[calculatorImg]}
 		name={name}
-		onClickProgram={props.onClickProgram}
-		onClickTag={props.onClickTag}
 		program={projProgram}
-		programState={props.programState}
-		selectedTags={props.selectedTags}
 		skills={projSkills}
 		tech={projTech}
 	/>

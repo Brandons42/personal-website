@@ -1,24 +1,21 @@
 import React from 'react';
 
 import Project from '../Project';
-import { quizWatchDataAnalysis } from './QuizWatchDataAnalysis';
+import programs from '../../programs';
 import skills from '../../skills';
 import tech from '../../tech';
 
-const { quizWatchDisplay1, quizWatchDisplay2 } = require('../../../img-data');
+const { schemeArt: schemeArtIMG } = require('../../../img-data');
 
-const name = 'Quiz Watch';
-const projSkills = [skills.mobile];
-const projTech = [
-	tech.reactNative,
-	tech.redux,
-	tech.reactNavigation,
-	tech.javaScript
-];
+const name = 'Scheme Artzzzzzzzzzz';
+const projProgram = programs.cs61a;
+const projSkills = [skills.algorithm];
+const projTech = [tech.scheme];
 
-const QuizWatch = props => (
+const SchemeArt = props => (
 	<Project
 		{...props}
+		code='https://inst.eecs.berkeley.edu/~cs61a/su20/proj/scheme_gallery/entries/d533fed8/contest.scm'
 		desc={
 			<p>
 				Quiz Watch, on the iOS App Store now, is the app you need to test and
@@ -30,20 +27,21 @@ const QuizWatch = props => (
 				questions you're interested in reviewing later on.
 			</p>
 		}
-		href='https://apps.apple.com/us/app/quiz-watch/id1454913754?ls=1'
-		imgs={[quizWatchDisplay1, quizWatchDisplay2]}
+		href='https://inst.eecs.berkeley.edu/~cs61a/su20/proj/scheme_gallery/#death-star-explosion-chain'
+		imgs={[schemeArtIMG]}
 		name={name}
-		related={[quizWatchDataAnalysis.name]}
+		program={projProgram}
 		skills={projSkills}
 		tech={projTech}
 	/>
 );
 
-export default QuizWatch;
+export default SchemeArt;
 
-export const quizWatch = {
-	Component: QuizWatch,
+export const schemeArt = {
+	Component: SchemeArt,
 	name,
+	projProgram,
 	projSkills,
 	projTech
 };

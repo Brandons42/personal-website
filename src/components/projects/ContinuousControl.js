@@ -17,8 +17,8 @@ const projTech = [tech.pytorch, tech.unityAgents, tech.python];
 
 const ContinuousControl = props => (
 	<Project
+		{...props}
 		code='https://github.com/Brandons42/continuous_control'
-		cursor={props.cursor}
 		desc={
 			<p>
 				This is the second project that I made for Udacity's Deep Reinforcement
@@ -29,11 +29,7 @@ const ContinuousControl = props => (
 		href='https://github.com/Brandons42/continuous_control/blob/master/continuous_control_report.pdf'
 		imgs={[continuousControlIMG, continuousControlGraph]}
 		name={name}
-		onClickProgram={props.onClickProgram}
-		onClickTag={props.onClickTag}
 		program={projProgram}
-		programState={props.programState}
-		selectedTags={props.selectedTags}
 		skills={projSkills}
 		tech={projTech}
 	/>

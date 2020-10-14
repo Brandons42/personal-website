@@ -21,7 +21,7 @@ const projTech = [
 
 const Geographist = props => (
 	<Project
-		cursor={props.cursor}
+		{...props}
 		desc={
 			<p>
 				Geographist is an app for geography lovers everywhere on the iOS App
@@ -34,8 +34,6 @@ const Geographist = props => (
 		href='https://apps.apple.com/us/app/geographist/id1470035851'
 		imgs={[geographistDisplay1, geographistDisplay2, geographistDisplay3]}
 		name={name}
-		onClickTag={props.onClickTag}
-		selectedTags={props.selectedTags}
 		skills={projSkills}
 		tech={projTech}
 	/>

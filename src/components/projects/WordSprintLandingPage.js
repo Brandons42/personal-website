@@ -1,24 +1,22 @@
 import React from 'react';
 
 import Project from '../Project';
-import { quizWatchDataAnalysis } from './QuizWatchDataAnalysis';
 import skills from '../../skills';
 import tech from '../../tech';
+import { wordSprint } from './WordSprint';
 
-const { quizWatchDisplay1, quizWatchDisplay2 } = require('../../../img-data');
+const {
+	wordSprintLandingPage: wordSprintLandingPageIMG
+} = require('../../../img-data');
 
-const name = 'Quiz Watch';
-const projSkills = [skills.mobile];
-const projTech = [
-	tech.reactNative,
-	tech.redux,
-	tech.reactNavigation,
-	tech.javaScript
-];
+const name = 'Word Sprint Landing Pagezzzzzzzzzz';
+const projSkills = [skills.frontEnd];
+const projTech = [tech.html, tech.css, tech.javaScript, tech.gulp];
 
-const QuizWatch = props => (
+const WordSprintLandingPage = props => (
 	<Project
 		{...props}
+		code='https://github.com/Brandons42/word-sprint'
 		desc={
 			<p>
 				Quiz Watch, on the iOS App Store now, is the app you need to test and
@@ -30,19 +28,19 @@ const QuizWatch = props => (
 				questions you're interested in reviewing later on.
 			</p>
 		}
-		href='https://apps.apple.com/us/app/quiz-watch/id1454913754?ls=1'
-		imgs={[quizWatchDisplay1, quizWatchDisplay2]}
+		href='https://brandons42.github.io/word-sprint/'
+		imgs={[wordSprintLandingPageIMG]}
 		name={name}
-		related={[quizWatchDataAnalysis.name]}
+		related={[wordSprint.name]}
 		skills={projSkills}
 		tech={projTech}
 	/>
 );
 
-export default QuizWatch;
+export default WordSprintLandingPage;
 
-export const quizWatch = {
-	Component: QuizWatch,
+export const wordSprintLandingPage = {
+	Component: WordSprintLandingPage,
 	name,
 	projSkills,
 	projTech

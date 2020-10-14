@@ -11,8 +11,8 @@ const projTech = [tech.javaScript];
 
 const WordExists = props => (
 	<Project
+		{...props}
 		code='https://github.com/Brandons42/word-exists'
-		cursor={props.cursor}
 		desc={
 			<p>
 				An open source NPM package that checks if a word exists or not in
@@ -21,9 +21,7 @@ const WordExists = props => (
 		}
 		href='https://www.npmjs.com/package/word-exists'
 		name={name}
-		onClickTag={props.onClickTag}
 		related={[wordExistsDocs.name]}
-		selectedTags={props.selectedTags}
 		skills={projSkills}
 		tech={projTech}
 	/>

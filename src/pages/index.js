@@ -61,8 +61,8 @@ export default class Home extends React.Component {
 						>
 							<div className={styles.titleContainer}>
 								<h1 className={styles.title}>Brandon Suen</h1>
-								<h3 className={styles.desc}>Full-stack Web Developer |</h3>
-								<h3 className={styles.desc}>React Native App Developer</h3>
+								<h3 className={styles.desc}>Software Developer</h3>
+								<h3 className={styles.desc}>Student at UC Berkeley</h3>
 							</div>
 							<div className={styles.gradient} />
 						</BackgroundImage>
@@ -74,12 +74,12 @@ export default class Home extends React.Component {
 							<h3>Who I am</h3>
 							<p>
 								I'm a programmer forever driven by a passion to build and learn
-								new things. To build my websites, I use React.js on the
-								front-end. I use Sass for styling and Node.js on the back-end. I
-								make my mobile apps using the React Native framework. If you'd
-								like me to build you an app or website or you'd like to get in
-								touch for another reason, feel free to connect with me on
-								LinkedIn or <a href='#contact'>contact me below</a>.
+								new things. I've built many websites and published apps on the
+								iOS App Store, and I'm currently study at the University of
+								California, Berkeley. I have lots of experience If you'd like me
+								to build you an app or website or you'd like to get in touch for
+								another reason, feel free to connect with me on LinkedIn or{' '}
+								<a href='#contact'>contact me below</a>.
 							</p>
 						</div>
 						<LinkedIn />

@@ -10,12 +10,12 @@ const {
 	bananaNavigatorGraph
 } = require('../../../img-data');
 
-const name = 'Banana Navigator';
+const name = 'Air Hockeyzzzzzzz';
 const projProgram = programs.drlnd;
 const projSkills = [skills.deepReinforcementLearning, skills.deepLearning];
 const projTech = [tech.pytorch, tech.unityAgents, tech.python];
 
-const BananaNavigator = props => (
+const AirHockey = props => (
 	<Project
 		{...props}
 		code='https://github.com/Brandons42/banana_navigator'
@@ -35,10 +35,10 @@ const BananaNavigator = props => (
 	/>
 );
 
-export default BananaNavigator;
+export default AirHockey;
 
-export const bananaNavigator = {
-	Component: BananaNavigator,
+export const airHockey = {
+	Component: AirHockey,
 	name,
 	projProgram,
 	projSkills,

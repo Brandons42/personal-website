@@ -14,8 +14,8 @@ const projTech = [tech.html, tech.css, tech.javaScript];
 
 const FCCPortfolio = props => (
 	<Project
+		{...props}
 		code='https://github.com/Brandons42/fcc-portfolio'
-		cursor={props.cursor}
 		desc={
 			<p>
 				A simple portfolio I made to display the projects I made for the
@@ -25,11 +25,7 @@ const FCCPortfolio = props => (
 		href='https://brandons42.github.io/fcc-portfolio/'
 		imgs={[fccPortfolio1, fccPortfolio2]}
 		name={name}
-		onClickProgram={props.onClickProgram}
-		onClickTag={props.onClickTag}
 		program={projProgram}
-		programState={props.programState}
-		selectedTags={props.selectedTags}
 		skills={projSkills}
 		tech={projTech}
 	/>

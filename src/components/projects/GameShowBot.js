@@ -5,17 +5,14 @@ import programs from '../../programs';
 import skills from '../../skills';
 import tech from '../../tech';
 
-const {
-	bananaNavigator: bananaNavigatorIMG,
-	bananaNavigatorGraph
-} = require('../../../img-data');
+const { gameShowBot: gameShowBotIMG } = require('../../../img-data');
 
-const name = 'Banana Navigator';
+const name = 'Game Show Botzzzzzzz';
 const projProgram = programs.drlnd;
 const projSkills = [skills.deepReinforcementLearning, skills.deepLearning];
 const projTech = [tech.pytorch, tech.unityAgents, tech.python];
 
-const BananaNavigator = props => (
+const GameShowBot = props => (
 	<Project
 		{...props}
 		code='https://github.com/Brandons42/banana_navigator'
@@ -27,7 +24,7 @@ const BananaNavigator = props => (
 			</p>
 		}
 		href='https://github.com/Brandons42/banana_navigator/blob/master/banana_navigator_report.pdf'
-		imgs={[bananaNavigatorIMG, bananaNavigatorGraph]}
+		imgs={[gameShowBotIMG]}
 		name={name}
 		program={projProgram}
 		skills={projSkills}
@@ -35,10 +32,10 @@ const BananaNavigator = props => (
 	/>
 );
 
-export default BananaNavigator;
+export default GameShowBot;
 
-export const bananaNavigator = {
-	Component: BananaNavigator,
+export const gameShowBot = {
+	Component: GameShowBot,
 	name,
 	projProgram,
 	projSkills,

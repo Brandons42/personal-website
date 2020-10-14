@@ -14,8 +14,8 @@ const projTech = [tech.pytorch, tech.unityAgents, tech.python];
 
 const Tennis = props => (
 	<Project
+		{...props}
 		code='https://github.com/Brandons42/tennis'
-		cursor={props.cursor}
 		desc={
 			<p>
 				This is the third project that I made for Udacity's Deep Reinforcement
@@ -26,11 +26,7 @@ const Tennis = props => (
 		href='https://github.com/Brandons42/tennis/blob/master/tennis_report.pdf'
 		imgs={[tennisIMG, tennisGraph]}
 		name={name}
-		onClickTag={props.onClickTag}
-		onClickProgram={props.onClickProgram}
 		program={projProgram}
-		programState={props.programState}
-		selectedTags={props.selectedTags}
 		skills={projSkills}
 		tech={projTech}
 	/>

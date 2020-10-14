@@ -2,10 +2,6 @@
 
 .content {
 	@extend %white;
-
-	h4 > a {
-		@extend %subtitle;
-	}
 }
 
 .title {

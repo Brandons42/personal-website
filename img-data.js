@@ -56,6 +56,11 @@ exports.continuousControlGraph = {
 	route: 'continuous-control-graph'
 };
 
+exports.cssi = {
+	alt: 'My Google CSSI certificate',
+	route: 'cssi'
+};
+
 exports.deerGiraffe = {
 	alt: "A giraffe with a deer's face",
 	route: 'deer-giraffe'
@@ -85,6 +90,11 @@ exports.fccPortfolio2 = {
 exports.fccRWDCert = {
 	alt: 'My freeCodeCamp Responsive Web Design Certification',
 	route: 'fcc-rwd-cert'
+};
+
+exports.gameShowBot = {
+	alt: 'Messages from my game show bot',
+	route: 'game-show-bot'
 };
 
 exports.geographistDisplay1 = {
@@ -193,6 +203,11 @@ exports.robot = {
 	route: 'robot'
 };
 
+exports.schemeArt = {
+	alt: 'My Scheme art entry',
+	route: 'scheme-art'
+};
+
 exports.smhsMagazine = {
 	alt: 'A magazine cover',
 	route: 'smhs-magazine'
@@ -230,6 +245,11 @@ exports.wordExistsDocs = {
 	route: 'word-exists-docs'
 };
 
+exports.wordSprintLandingPage = {
+	alt: 'Landing page for the Word Sprint iOS app',
+	route: 'word-sprint-landing-page'
+};
+
 exports.yoda = {
 	alt: 'My Yoda illustration',
 	route: 'yoda'
@@ -247,12 +267,14 @@ exports.imgs = [
 	exports.cards,
 	exports.continuousControl,
 	exports.continuousControlGraph,
+	exports.cssi,
 	exports.deerGiraffe,
 	exports.edXAgileCert,
 	exports.fccJSCert,
 	exports.fccPortfolio1,
 	exports.fccPortfolio2,
 	exports.fccRWDCert,
+	exports.gameShowBot,
 	exports.geographistDisplay1,
 	exports.geographistDisplay2,
 	exports.geographistDisplay3,
@@ -274,6 +296,7 @@ exports.imgs = [
 	exports.quizWatchDisplay1,
 	exports.quizWatchDisplay2,
 	exports.robot,
+	exports.schemeArt,
 	exports.smhsMagazine,
 	exports.sneaker,
 	exports.tennis,
@@ -281,5 +304,6 @@ exports.imgs = [
 	exports.todoList,
 	exports.udacityDRLNDCert,
 	exports.wordExistsDocs,
+	exports.wordSprintLandingPage,
 	exports.yoda
 ];

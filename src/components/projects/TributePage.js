@@ -1,22 +1,23 @@
 import React from 'react';
 
 import Project from '../Project';
-import { quizWatchDataAnalysis } from './QuizWatchDataAnalysis';
 import skills from '../../skills';
 import tech from '../../tech';
+import { wordSprintLandingPage } from './WordSprintLandingPage';
 
 const { quizWatchDisplay1, quizWatchDisplay2 } = require('../../../img-data');
 
-const name = 'Quiz Watch';
+const name = 'Tribute Pagezzzzzzzzzz';
 const projSkills = [skills.mobile];
 const projTech = [
 	tech.reactNative,
 	tech.redux,
+	tech.firebase,
 	tech.reactNavigation,
 	tech.javaScript
 ];
 
-const QuizWatch = props => (
+const WordSprint = props => (
 	<Project
 		{...props}
 		desc={
@@ -30,19 +31,19 @@ const QuizWatch = props => (
 				questions you're interested in reviewing later on.
 			</p>
 		}
-		href='https://apps.apple.com/us/app/quiz-watch/id1454913754?ls=1'
+		href='https://apps.apple.com/us/app/word-sprint-rhymes-synonyms/id1502860378'
 		imgs={[quizWatchDisplay1, quizWatchDisplay2]}
 		name={name}
-		related={[quizWatchDataAnalysis.name]}
+		related={[wordSprintLandingPage.name]}
 		skills={projSkills}
 		tech={projTech}
 	/>
 );
 
-export default QuizWatch;
+export default WordSprint;
 
-export const quizWatch = {
-	Component: QuizWatch,
+export const tributePage = {
+	Component: WordSprint,
 	name,
 	projSkills,
 	projTech

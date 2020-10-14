@@ -19,7 +19,9 @@ const ProgramLogo = props => {
 			>
 				<div
 					className={classes.join(' ')}
-					onClick={() => props.onClick(props.program.name)}
+					onClick={
+						props.onClick ? () => props.onClick(props.program.name) : null
+					}
 					style={{ backgroundImage: `url("${props.program.src}")` }}
 				/>
 			</Tooltip>
