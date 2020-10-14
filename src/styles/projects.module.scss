@@ -37,6 +37,10 @@
 	}
 }
 
+.none {
+	@extend %white;
+}
+
 .projects {
 	flex: 1;
 }

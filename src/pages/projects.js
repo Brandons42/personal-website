@@ -158,16 +158,26 @@ export default class Projects extends React.Component {
 							</div>
 						)}
 						<div className={styles.projects}>
-							{this.state.projects.map(({ Component }, i) => (
-								<Component
-									cursor
-									key={i}
-									onClickProgram={this.selectProgram}
-									onClickTag={this.selectTag}
-									programState={this.state.program}
-									selectedTags={this.state.tech}
-								/>
-							))}
+							{this.state.projects.length > 0 ? (
+								this.state.projects.map(({ Component }, i) => (
+									<Component
+										cursor
+										key={i}
+										onClickProgram={this.selectProgram}
+										onClickTag={this.selectTag}
+										programState={this.state.program}
+										selectedTags={this.state.tech}
+									/>
+								))
+							) : (
+								<div className={styles.none}>
+									<p>
+										Unfortunately, it seems that there are no projects that
+										match the filter criteria you entered. Try adjusting the
+										filters to produce relevant results.
+									</p>
+								</div>
+							)}
 						</div>
 					</div>
 				</div>
