@@ -3,6 +3,11 @@ exports.aif = {
 	route: 'landing'
 };
 
+exports.airHockey = {
+	alt: 'Air hockey web game',
+	route: 'air-hockey'
+};
+
 exports.albumBack = {
 	alt: 'An album back design',
 	route: 'album-back'
@@ -71,6 +76,11 @@ exports.deerGiraffe = {
 	route: 'deer-giraffe'
 };
 
+exports.drawingGame = {
+	alt: 'Web drawing game',
+	route: 'drawing-game'
+};
+
 exports.edXAgileCert = {
 	alt: 'My BerkeleyX Agile Development Certification',
 	route: 'edx-agile-cert'
@@ -95,6 +105,11 @@ exports.fccPortfolio2 = {
 exports.fccRWDCert = {
 	alt: 'My freeCodeCamp Responsive Web Design Certification',
 	route: 'fcc-rwd-cert'
+};
+
+exports.frogger = {
+	alt: 'Frogger web game',
+	route: 'frogger'
 };
 
 exports.gameShowBot = {
@@ -125,6 +140,11 @@ exports.googleHomepage = {
 exports.graffiti = {
 	alt: 'My graffiti artwork of my name',
 	route: 'graffiti'
+};
+
+exports.grassAnimation = {
+	alt: 'Grass animation',
+	route: 'grass-animation'
 };
 
 exports.hoth = {
@@ -181,6 +201,21 @@ exports.memRollDisplay = {
 exports.natureEffect = {
 	alt: 'Nature effects',
 	route: 'nature-effect'
+};
+
+exports.nBody1 = {
+	alt: 'My NBody simulator',
+	route: 'nbody-1'
+};
+
+exports.nBody2 = {
+	alt: 'My NBody simulator',
+	route: 'nbody-2'
+};
+
+exports.nBody3 = {
+	alt: 'My NBody simulator',
+	route: 'nbody-3'
 };
 
 exports.poster = {
@@ -265,6 +300,18 @@ exports.wordSprintLandingPage = {
 	route: 'word-sprint-landing-page'
 };
 
+exports.wordSprintRhyme = {
+	alt: 'Word Sprint iOS app Rhyme Mode',
+	ext: 'gif',
+	route: 'word-sprint-rhyme'
+};
+
+exports.wordSprintSprint = {
+	alt: 'Word Sprint iOS app Sprint Mode',
+	ext: 'gif',
+	route: 'word-sprint-sprint'
+};
+
 exports.yoda = {
 	alt: 'My Yoda illustration',
 	route: 'yoda'
@@ -272,6 +319,7 @@ exports.yoda = {
 
 exports.imgs = [
 	exports.aif,
+	exports.airHockey,
 	exports.albumBack,
 	exports.albumCover,
 	exports.albumDisc,
@@ -285,17 +333,20 @@ exports.imgs = [
 	exports.continuousControlGraph,
 	exports.cssi,
 	exports.deerGiraffe,
+	exports.drawingGame,
 	exports.edXAgileCert,
 	exports.fccJSCert,
 	exports.fccPortfolio1,
 	exports.fccPortfolio2,
 	exports.fccRWDCert,
+	exports.frogger,
 	exports.gameShowBot,
 	exports.geographistDisplay1,
 	exports.geographistDisplay2,
 	exports.geographistDisplay3,
 	exports.googleHomepage,
 	exports.graffiti,
+	exports.grassAnimation,
 	exports.hoth,
 	exports.jpMorganChaseCert,
 	exports.junkShip,
@@ -307,6 +358,9 @@ exports.imgs = [
 	exports.markdownPreviewer,
 	exports.memRollDisplay,
 	exports.natureEffect,
+	exports.nBody1,
+	exports.nBody2,
+	exports.nBody3,
 	exports.poster,
 	exports.quizWatchDataAnalysis,
 	exports.quizWatchDisplay1,
@@ -323,5 +377,7 @@ exports.imgs = [
 	exports.udacityDRLNDCert,
 	exports.wordExistsDocs,
 	exports.wordSprintLandingPage,
+	exports.wordSprintRhyme,
+	exports.wordSprintSprint,
 	exports.yoda
 ];

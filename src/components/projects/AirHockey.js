@@ -5,20 +5,17 @@ import programs from '../../programs';
 import skills from '../../skills';
 import tech from '../../tech';
 
-const {
-	bananaNavigator: bananaNavigatorIMG,
-	bananaNavigatorGraph
-} = require('../../../img-data');
+const { airHockey: airHockeyIMG } = require('../../../img-data');
 
 const name = 'Air Hockeyzzzzzzz';
 const projProgram = programs.cssi;
-const projSkills = [skills.deepReinforcementLearning, skills.deepLearning];
-const projTech = [tech.pytorch, tech.unityAgents, tech.python];
+const projSkills = [skills.frontEnd];
+const projTech = [tech.p5, tech.javaScript];
 
 const AirHockey = props => (
 	<Project
 		{...props}
-		code='https://github.com/Brandons42/banana_navigator'
+		code='https://glitch.com/edit/#!/tin-daisy-bamboo'
 		desc={
 			<p>
 				This is the first project that I made for Udacity's Deep Reinforcement
@@ -26,8 +23,8 @@ const AirHockey = props => (
 				collect yellow but not blue bananas in an efficient manner.
 			</p>
 		}
-		href='https://github.com/Brandons42/banana_navigator/blob/master/banana_navigator_report.pdf'
-		imgs={[bananaNavigatorIMG, bananaNavigatorGraph]}
+		href='https://tin-daisy-bamboo.glitch.me/'
+		imgs={[airHockeyIMG]}
 		name={name}
 		program={projProgram}
 		skills={projSkills}

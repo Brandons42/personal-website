@@ -8,6 +8,8 @@ const tech = {
 	html: 'HTML',
 	java: 'Java',
 	javaScript: 'JavaScript',
+	node: 'Node.JS',
+	p5: 'p5.js',
 	pandas: 'Pandas',
 	parcel: 'Parcel',
 	python: 'Python',
@@ -19,6 +21,7 @@ const tech = {
 	scheme: 'Scheme',
 	scss: 'SCSS/SASS',
 	unityAgents: 'Unity Agents',
+	webSocket: 'WebSocket',
 	xgboost: 'XGBoost'
 };
 

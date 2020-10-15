@@ -5,6 +5,7 @@ import BackgroundImage from 'gatsby-background-image';
 import Layout from '../components/Layout';
 import LinkedIn from '../components/LinkedIn';
 import QuizWatch from '../components/projects/QuizWatch';
+import Tennis from '../components/projects/Tennis';
 import WordSprint from '../components/projects/WordSprint';
 import resume from '../images/resume.png';
 import styles from '../styles/index.module.scss';
@@ -123,9 +124,10 @@ export default class Home extends React.Component {
 						</div>
 					</div>
 					<div className={styles.white}>
-						<h2>Featured Work</h2>
+						<h2>Featured Projects</h2>
 						<QuizWatch onClickTag={() => {}} selectedTags={[]} />
 						<WordSprint onClickTag={() => {}} selectedTags={[]} />
+						<Tennis onClickTag={() => {}} selectedTags={[]} />
 						<Link to='/projects'>
 							<h3 className={styles.center}>See more projects</h3>
 						</Link>

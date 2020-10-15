@@ -101,7 +101,6 @@ export default class Projects extends React.Component {
 				<div className={styles.container}>
 					<div className={styles.title}>
 						<h2>Personal Projects</h2>
-						<p>Hi</p>
 					</div>
 					<div className={styles.content}>
 						{window.innerWidth > 1100 && (

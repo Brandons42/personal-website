@@ -2,10 +2,13 @@ import { airHockey } from './components/projects/AirHockey';
 import { bananaNavigator } from './components/projects/BananaNavigator';
 import { calculator } from './components/projects/Calculator';
 import { continuousControl } from './components/projects/ContinuousControl';
+import { drawingGame } from './components/projects/DrawingGame';
 import { fccPortfolio } from './components/projects/FCCPortfolio';
+import { frogger } from './components/projects/Frogger';
 import { gameShowBot } from './components/projects/GameShowBot';
 import { geographist } from './components/projects/Geographist';
 import { google } from './components/projects/Google';
+import { grassAnimation } from './components/projects/GrassAnimation';
 import { hogContest } from './components/projects/HogContest';
 import { landingPage } from './components/projects/LandingPage';
 import { markdown } from './components/projects/Markdown';
@@ -31,10 +34,13 @@ const projects = [
 	bananaNavigator,
 	calculator,
 	continuousControl,
+	drawingGame,
 	fccPortfolio,
+	frogger,
 	gameShowBot,
 	geographist,
 	google,
+	grassAnimation,
 	hogContest,
 	landingPage,
 	markdown,

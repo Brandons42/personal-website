@@ -5,7 +5,7 @@ import skills from '../../skills';
 import tech from '../../tech';
 import { wordSprintLandingPage } from './WordSprintLandingPage';
 
-const { quizWatchDisplay1, quizWatchDisplay2 } = require('../../../img-data');
+const { wordSprintRhyme, wordSprintSprint } = require('../../../img-data');
 
 const name = 'Word Sprintzzzzzzzzzz';
 const projSkills = [skills.mobile];
@@ -32,7 +32,7 @@ const WordSprint = props => (
 			</p>
 		}
 		href='https://apps.apple.com/us/app/word-sprint-rhymes-synonyms/id1502860378'
-		imgs={[quizWatchDisplay1, quizWatchDisplay2]}
+		imgs={[wordSprintSprint, wordSprintRhyme]}
 		name={name}
 		related={[wordSprintLandingPage.name]}
 		skills={projSkills}

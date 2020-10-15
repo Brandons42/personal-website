@@ -18,7 +18,7 @@ const programs = {
 		src: google
 	},
 	drlnd: {
-		name: 'Udacity',
+		name: 'Udacity DRLND',
 		src: drnld
 	},
 	freeCodeCamp: {

@@ -5,7 +5,7 @@ import programs from '../../programs';
 import skills from '../../skills';
 import tech from '../../tech';
 
-const { gameShowBot: gameShowBotIMG } = require('../../../img-data');
+const { nBody1, nBody2, nBody3 } = require('../../../img-data');
 
 const name = 'NBody Simulatorzzzzzzz';
 const projProgram = programs.cs61b;
@@ -23,7 +23,7 @@ const NBodySimulator = props => (
 			</p>
 		}
 		href='https://youtu.be/JjM3SmOq7F0'
-		imgs={[gameShowBotIMG]}
+		imgs={[nBody1, nBody2, nBody3]}
 		name={name}
 		program={projProgram}
 		skills={projSkills}
