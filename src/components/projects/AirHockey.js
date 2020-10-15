@@ -7,7 +7,7 @@ import tech from '../../tech';
 
 const { airHockey: airHockeyIMG } = require('../../../img-data');
 
-const name = 'Air Hockeyzzzzzzz';
+const name = 'Air Hockey';
 const projProgram = programs.cssi;
 const projSkills = [skills.frontEnd];
 const projTech = [tech.p5, tech.javaScript];
@@ -18,9 +18,10 @@ const AirHockey = props => (
 		code='https://glitch.com/edit/#!/tin-daisy-bamboo'
 		desc={
 			<p>
-				This is the first project that I made for Udacity's Deep Reinforcement
-				Learning Nanodegree, in which I trained an agent to navigate a world to
-				collect yellow but not blue bananas in an efficient manner.
+				This is the final project of the Google CSSI project that I made with my
+				partner and presented on the final day. It's a simple air hockey
+				web-game that can be played between two players locally using the
+				w-a-s-d keys and arrow keys.
 			</p>
 		}
 		href='https://tin-daisy-bamboo.glitch.me/'

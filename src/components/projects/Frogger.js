@@ -7,7 +7,7 @@ import tech from '../../tech';
 
 const { frogger: froggerIMG } = require('../../../img-data');
 
-const name = 'Froggerzzzzzzz';
+const name = 'Frogger';
 const projProgram = programs.cssi;
 const projSkills = [skills.frontEnd];
 const projTech = [tech.p5, tech.javaScript];
@@ -18,9 +18,9 @@ const Frogger = props => (
 		code='https://glitch.com/edit/#!/flower-caramel-passionfruit'
 		desc={
 			<p>
-				This is the first project that I made for Udacity's Deep Reinforcement
-				Learning Nanodegree, in which I trained an agent to navigate a world to
-				collect yellow but not blue bananas in an efficient manner.
+				This is a project I made for Google's CSSI program in which the user
+				must make it past all of the cars moving across the screen using the
+				arrow keys.
 			</p>
 		}
 		href='https://flower-caramel-passionfruit.glitch.me/'

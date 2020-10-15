@@ -7,7 +7,7 @@ import { wordSprintLandingPage } from './WordSprintLandingPage';
 
 const { wordSprintRhyme, wordSprintSprint } = require('../../../img-data');
 
-const name = 'Word Sprintzzzzzzzzzz';
+const name = 'Word Sprint';
 const projSkills = [skills.mobile];
 const projTech = [
 	tech.reactNative,
@@ -22,16 +22,14 @@ const WordSprint = props => (
 		{...props}
 		desc={
 			<p>
-				Quiz Watch, on the iOS App Store now, is the app you need to test and
-				add to your knowledge. Using this app will enhance your Quiz Bowl or
-				general trivia prowess, all while you're having a great time. You can
-				keep track of your statistics and track your improvement. Furthermore,
-				you can configure settings to get the questions at the right difficulty
-				level and served at the right speed for you. You can even bookmark
-				questions you're interested in reviewing later on.
+				Word Sprint, on the iOS App Store now, is a vibrant, fast-paced word
+				game with three fun game modes. Each of the game modes are based around
+				linking one word to another. These "links" are accomplished by inputting
+				a word that is a synonym/related word, antonym, anagram, or rhyme of the
+				target word.
 			</p>
 		}
-		href='https://apps.apple.com/us/app/word-sprint-rhymes-synonyms/id1502860378'
+		href='https://brandons42.github.io/word-sprint/'
 		imgs={[wordSprintSprint, wordSprintRhyme]}
 		name={name}
 		related={[wordSprintLandingPage.name]}

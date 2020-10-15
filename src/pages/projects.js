@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'gatsby';
 
 import Layout from '../components/Layout';
 import ProgramLogo from '../components/ProgramLogo';
@@ -148,7 +149,10 @@ export default class Projects extends React.Component {
 								<div className={styles.indent}>
 									{this.state.projects.map(({ name }, i) => (
 										<p key={i}>
-											<a className={styles.link} href={'#' + name}>
+											<a
+												className={styles.link}
+												href={'#' + name.replace(/\s/g, '')}
+											>
 												{name}
 											</a>
 										</p>

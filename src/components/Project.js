@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'gatsby';
 import { OutboundLink } from 'gatsby-plugin-google-analytics';
 import { Carousel } from 'react-responsive-carousel';
 
@@ -10,7 +11,7 @@ import styles from '../styles/project.module.scss';
 import '../styles/arrow-overide.scss';
 
 const Project = props => (
-	<div className={styles.container} id={props.name}>
+	<div className={styles.container} id={props.name.replace(/\s/g, '')}>
 		<div className={styles.titleContainer}>
 			{props.href ? (
 				<OutboundLink href={props.href} target='_blank'>
@@ -50,20 +51,17 @@ const Project = props => (
 			<p className={styles.related}>
 				Related projects:{' '}
 				{props.related.map((project, i) => (
-					<a className={styles.link} href={'#' + project} key={i}>
+					<Link
+						className={styles.link}
+						key={i}
+						to={'/projects#' + project.replace(/\s/g, '')}
+					>
 						{project}
-					</a>
+					</Link>
 				))}
 			</p>
 		)}
 		{props.desc}
-		{/*props.imgs && (
-			<div className={styles.imageContainer}>
-				{props.imgs.map((img, q) => (
-					<DynamicImage className={styles.image} img={img} key={q} />
-				))}
-			</div>
-				)*/}
 		{props.imgs && (
 			<Carousel
 				autoPlay

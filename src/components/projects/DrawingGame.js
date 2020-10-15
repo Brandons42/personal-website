@@ -7,7 +7,7 @@ import tech from '../../tech';
 
 const { drawingGame: drawingGameIMG } = require('../../../img-data');
 
-const name = 'Drawing Gamezzzzzzz';
+const name = 'Drawing Game';
 const projProgram = programs.cssi;
 const projSkills = [skills.frontEnd];
 const projTech = [tech.p5, tech.javaScript];
@@ -18,9 +18,9 @@ const DrawingGame = props => (
 		code='https://glitch.com/edit/#!/tangy-bouncy-week'
 		desc={
 			<p>
-				This is the first project that I made for Udacity's Deep Reinforcement
-				Learning Nanodegree, in which I trained an agent to navigate a world to
-				collect yellow but not blue bananas in an efficient manner.
+				This is a group project I helped make during Google's CSSI program. It's
+				a game during which one person paints a picture on the canvas, after
+				which the other player tries to guess what they've just drawn.
 			</p>
 		}
 		href='https://tangy-bouncy-week.glitch.me/'
