@@ -7,7 +7,7 @@ import tech from '../../tech';
 
 const { grassAnimation: grassAnimationIMG } = require('../../../img-data');
 
-const name = 'Grass Animationzzzzzzz';
+const name = 'Grass Animation';
 const projProgram = programs.cssi;
 const projSkills = [skills.frontEnd];
 const projTech = [tech.p5, tech.javaScript];
@@ -18,9 +18,9 @@ const GrassAnimation = props => (
 		code='https://glitch.com/edit/#!/hot-enchanted-trouser'
 		desc={
 			<p>
-				This is the first project that I made for Udacity's Deep Reinforcement
-				Learning Nanodegree, in which I trained an agent to navigate a world to
-				collect yellow but not blue bananas in an efficient manner.
+				This is a project I made for the Google CSSI program that involved
+				randomly generating many grass blades and rain drops and making the
+				grass slowly grow as the raindrops fell.
 			</p>
 		}
 		href='https://hot-enchanted-trouser.glitch.me/'

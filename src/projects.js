@@ -29,6 +29,7 @@ import { wordSprintLandingPage } from './components/projects/WordSprintLandingPa
 
 const projects = [
 	quizWatch,
+	wordSprint,
 	tennis,
 	airHockey,
 	bananaNavigator,
@@ -54,7 +55,6 @@ const projects = [
 	tributePage,
 	wordExists,
 	wordExistsDocs,
-	wordSprint,
 	wordSprintLandingPage
 ];
 

@@ -6,7 +6,7 @@ import tech from '../../tech';
 
 const { gameShowBot: gameShowBotIMG } = require('../../../img-data');
 
-const name = 'Game Show Botzzzzzzz';
+const name = 'Game Show Bot';
 const projSkills = [skills.botDevelopment];
 const projTech = [tech.webSocket, tech.node, tech.javaScript];
 
@@ -15,9 +15,11 @@ const GameShowBot = props => (
 		{...props}
 		desc={
 			<p>
-				This is the first project that I made for Udacity's Deep Reinforcement
-				Learning Nanodegree, in which I trained an agent to navigate a world to
-				collect yellow but not blue bananas in an efficient manner.
+				This is a bot that solved answers for a live trivia game show app and
+				automatically messaged answers to as the presenter for the game show
+				asked the questions. It did this by connecting to the game's WebSocket
+				stream to instantly access questions, and it solved the questions using
+				algorithm including the Google Custom Search API and Wikipedia API.
 			</p>
 		}
 		imgs={[gameShowBotIMG]}

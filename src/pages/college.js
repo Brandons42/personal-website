@@ -29,9 +29,11 @@ const College = () => (
 					<CourseLink href='https://classes.berkeley.edu/content/2020-fall-compsci-61b-001-lec-001'>
 						COMPSCI 61B: Data Structures
 					</CourseLink>
-					<Link to={'/projects?program=' + programs.cs61b.name}>
-						See projects I've done for this class
-					</Link>
+					<div className={styles.indent}>
+						<Link to={'/projects?program=' + programs.cs61b.name}>
+							See projects I've done for this class
+						</Link>
+					</div>
 					<CourseLink href='https://classes.berkeley.edu/content/2020-fall-eecs-16a-001-lec-001'>
 						EECS 16A: Designing Information Devices and Systems I
 					</CourseLink>
@@ -49,9 +51,11 @@ const College = () => (
 					<CourseLink href='https://classes.berkeley.edu/content/2020-summer-compsci-61a-001-lec-001'>
 						COMPSCI 61A: The Structure and Interpretation of Computer Programs
 					</CourseLink>
-					<Link to={'/projects?program=' + programs.cs61a.name}>
-						See projects I've done for this class
-					</Link>
+					<div className={styles.indent}>
+						<Link to={'/projects?program=' + programs.cs61a.name}>
+							See projects I've done for this class
+						</Link>
+					</div>
 				</ul>
 			</div>
 		</div>
