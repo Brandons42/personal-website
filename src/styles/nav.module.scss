@@ -1,5 +1,13 @@
 @import 'vars';
 
+.burger {
+	height: 5vh;
+	position: absolute;
+	right: 10vw;
+	top: $navh / 2 - 2.5vh;
+	width: 5vh;
+}
+
 .button {
 	@extend %body-text;
 
@@ -22,7 +30,7 @@
 .link {
 	@extend %body-text;
 	color: $blue;
-	margin: 0 3vw;
+	margin: 0 1.5vw;
 }
 
 .logo {
@@ -50,7 +58,13 @@
 	flex-wrap: nowrap;
 }
 
-@media (max-width: 700px) {
+@media (max-width: 1100px) {
+	.nav {
+		padding: 0 2vw;
+	}
+}
+
+@media (max-width: 825px) {
 	.logo,
 	.textLinks {
 		margin-bottom: 3vh;

@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link } from 'gatsby';
 
 import Layout from '../components/Layout';
 import ProgramLogo from '../components/ProgramLogo';
@@ -20,7 +19,7 @@ export default class Projects extends React.Component {
 	constructor() {
 		super();
 
-		this.state = { projects, skill: all, tech: [] };
+		this.state = { projects, skill: all, tech: [], width: window.innerWidth };
 
 		const params = new URLSearchParams(document.location.search.substring(1));
 		const program = params.get('program');
@@ -32,6 +31,10 @@ export default class Projects extends React.Component {
 			this.state.program = program;
 			this.state.projects = this.filterByProgram(this.state.projects);
 		}
+	}
+
+	componentDidMount() {
+		window.addEventListener('resize', this.resize);
 	}
 
 	filterByProgram = (projects, program = this.state.program) =>
@@ -52,6 +55,8 @@ export default class Projects extends React.Component {
 			: projects.filter(({ projTech }) =>
 					tech.some(tag => projTech.includes(tag))
 			  );
+
+	resize = () => this.setState({ width: window.innerWidth });
 
 	selectProgram = program => {
 		const programState = this.state.program === program ? false : program;
@@ -96,6 +101,10 @@ export default class Projects extends React.Component {
 		});
 	};
 
+	componentWillUnmount() {
+		window.removeEventListener('resize', this.resize);
+	}
+
 	render() {
 		return (
 			<Layout title='Projects'>
@@ -104,7 +113,7 @@ export default class Projects extends React.Component {
 						<h2>Personal Projects</h2>
 					</div>
 					<div className={styles.content}>
-						{window.innerWidth > 1100 && (
+						{this.state.width > 1100 && (
 							<div className={styles.navBar}>
 								<h3>Filter by program</h3>
 								<div className={styles.indent}>
