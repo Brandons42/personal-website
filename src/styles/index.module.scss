@@ -53,7 +53,8 @@ $resumeWidth: 62vh;
 	@extend %white;
 
 	& > div {
-		margin-left: -10vw;
+		margin: -5vh -10vw;
+		width: 100vw;
 	}
 }
 
