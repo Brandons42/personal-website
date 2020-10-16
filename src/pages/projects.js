@@ -35,7 +35,7 @@ export default class Projects extends React.Component {
 		) {
 			this.setState({
 				program,
-				projects: this.filterByProgram(this.state.projects)
+				projects: this.filterByProgram(this.state.projects, program)
 			});
 		}
 	}
