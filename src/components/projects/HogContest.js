@@ -5,9 +5,7 @@ import programs from '../../programs';
 import skills from '../../skills';
 import tech from '../../tech';
 
-const { googleHomepage } = require('../../../img-data');
-
-const name = 'Hog Contest Algorithmzzzzzzzzzzzzzzzzzzz';
+const name = 'Hog Contest Algorithm';
 const projProgram = programs.cs61a;
 const projSkills = [skills.algorithm, skills.machineLearning];
 const projTech = [tech.python, tech.xgboost, tech.pandas];
@@ -15,17 +13,14 @@ const projTech = [tech.python, tech.xgboost, tech.pandas];
 const HogContest = props => (
 	<Project
 		{...props}
-		code='https://github.com/Brandons42/google-homepage'
 		desc={
 			<p>
-				Hosted on Github Pages, this is a recreation of Google's homepage(in
-				2017) built for{' '}
-				<a href='https://www.theodinproject.com/'>The Odin Project's</a>{' '}
-				curriculum.
+				This is my submission for UC Berkeley CS 61A's contest to create the
+				best algorithm to play a dice-rolling game against other students'
+				algorithms.
 			</p>
 		}
-		href='https://brandons42.github.io/google-homepage'
-		imgs={[googleHomepage]}
+		href='https://hog-contest.cs61a.org/old_results/su20/'
 		name={name}
 		program={projProgram}
 		skills={projSkills}

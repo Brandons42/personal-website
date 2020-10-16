@@ -7,7 +7,7 @@ import tech from '../../tech';
 
 const { nBody1, nBody2, nBody3 } = require('../../../img-data');
 
-const name = 'NBody Simulatorzzzzzzz';
+const name = 'NBody Simulator';
 const projProgram = programs.cs61b;
 const projSkills = [skills.algorithm];
 const projTech = [tech.java];
@@ -17,9 +17,12 @@ const NBodySimulator = props => (
 		{...props}
 		desc={
 			<p>
-				This is the first project that I made for Udacity's Deep Reinforcement
-				Learning Nanodegree, in which I trained an agent to navigate a world to
-				collect yellow but not blue bananas in an efficient manner.
+				This is my extra credit extension for the first project of UC Berkeley's
+				CS 61B class in which we create a simulator that models gravitational
+				pull between celestial bodies. For my extra credit extension, I allowed
+				users to create new bodies with the click of a mouse. The new body
+				starts with the initial velocity the cursor had when the body was
+				created.
 			</p>
 		}
 		href='https://youtu.be/JjM3SmOq7F0'

@@ -7,7 +7,7 @@ import tech from '../../tech';
 
 const { aif } = require('../../../img-data');
 
-const name = 'Landing Pagezzzzzzzzzz';
+const name = 'AIF Landing Page';
 const projProgram = programs.freeCodeCamp;
 const projSkills = [skills.frontEnd];
 const projTech = [tech.html, tech.css, tech.javaScript, tech.gulp];
@@ -18,13 +18,10 @@ const LandingPage = props => (
 		code='https://github.com/Brandons42/american-imperial-faction'
 		desc={
 			<p>
-				Quiz Watch, on the iOS App Store now, is the app you need to test and
-				add to your knowledge. Using this app will enhance your Quiz Bowl or
-				general trivia prowess, all while you're having a great time. You can
-				keep track of your statistics and track your improvement. Furthermore,
-				you can configure settings to get the questions at the right difficulty
-				level and served at the right speed for you. You can even bookmark
-				questions you're interested in reviewing later on.
+				The landing page for the American Imperial Faction, which is a
+				make-believe political-party I created for a project in governement &
+				politics class in high school. The landing page project is part of the
+				freeCodeCamp curriculum.
 			</p>
 		}
 		href='https://brandons42.github.io/american-imperial-faction/?fcc'

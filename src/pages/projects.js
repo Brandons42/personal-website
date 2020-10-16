@@ -33,8 +33,10 @@ export default class Projects extends React.Component {
 			program &&
 			programList.map(programObj => programObj.name).includes(program)
 		) {
-			this.state.program = program;
-			this.state.projects = this.filterByProgram(this.state.projects);
+			this.setState({
+				program,
+				projects: this.filterByProgram(this.state.projects)
+			});
 		}
 	}
 
