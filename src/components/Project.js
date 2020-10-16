@@ -3,8 +3,7 @@ import { Link } from 'gatsby';
 import { OutboundLink } from 'gatsby-plugin-google-analytics';
 import { Carousel } from 'react-responsive-carousel';
 
-//import DynamicImage from './DynamicImage';
-import Image from './Image';
+import DynamicImage from './DynamicImage';
 import ProgramLogo from './ProgramLogo';
 import Tag from './Tag';
 import styles from '../styles/project.module.scss';
@@ -73,13 +72,7 @@ const Project = props => (
 				>
 					{props.imgs.map((img, i) => (
 						<div className={styles.slideDiv} key={i}>
-							<Image
-								alt={img.alt}
-								route={img.route}
-								src={require(`../images/${img.route}.${
-									img.ext ? img.ext : 'png'
-								}`)}
-							/>
+							<DynamicImage img={img} />
 						</div>
 					))}
 				</Carousel>
