@@ -9,10 +9,11 @@ import styles from '../styles/nav.module.scss';
 const resizeSize = 825;
 
 export default class Nav extends React.Component {
-	state = { expand: false, width: window.innerWidth };
+	state = { expand: false };
 
 	componentDidMount() {
 		window.addEventListener('resize', this.resize);
+		this.resize();
 	}
 
 	resize = () => this.setState({ width: window.innerWidth });
@@ -33,7 +34,8 @@ export default class Nav extends React.Component {
 				<Link to='/'>
 					<img alt='Brandon Suen' className={styles.logo} src={logo} />
 				</Link>
-				{(this.state.width > resizeSize || this.state.expand) && (
+				{((this.state.width && this.state.width > resizeSize) ||
+					this.state.expand) && (
 					<div className={styles.textLinks}>
 						{this.props.design ? (
 							<Link className={styles.link} to='/'>
@@ -60,7 +62,7 @@ export default class Nav extends React.Component {
 						</a>
 					</div>
 				)}
-				{this.state.width <= resizeSize && (
+				{this.state.width && this.state.width <= resizeSize && (
 					<img alt='Burger menu icon' className={styles.burger} src={burger} />
 				)}
 			</div>

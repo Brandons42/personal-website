@@ -63,25 +63,27 @@ const Project = props => (
 		)}
 		{props.desc}
 		{props.imgs && (
-			<Carousel
-				autoPlay
-				className={styles.carousel}
-				infiniteLoop
-				showThumbs={false}
-				useKeyboardArrows
-			>
-				{props.imgs.map((img, i) => (
-					<div className={styles.slideDiv} key={i}>
-						<Image
-							alt={img.alt}
-							route={img.route}
-							src={require(`../images/${img.route}.${
-								img.ext ? img.ext : 'png'
-							}`)}
-						/>
-					</div>
-				))}
-			</Carousel>
+			<div id='blue-arrows'>
+				<Carousel
+					autoPlay
+					className={styles.carousel}
+					infiniteLoop
+					showThumbs={false}
+					useKeyboardArrows
+				>
+					{props.imgs.map((img, i) => (
+						<div className={styles.slideDiv} key={i}>
+							<Image
+								alt={img.alt}
+								route={img.route}
+								src={require(`../images/${img.route}.${
+									img.ext ? img.ext : 'png'
+								}`)}
+							/>
+						</div>
+					))}
+				</Carousel>
+			</div>
 		)}
 	</div>
 );

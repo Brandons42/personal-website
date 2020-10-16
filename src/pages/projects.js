@@ -19,7 +19,12 @@ export default class Projects extends React.Component {
 	constructor() {
 		super();
 
-		this.state = { projects, skill: all, tech: [], width: window.innerWidth };
+		this.state = { projects, skill: all, tech: [] };
+	}
+
+	componentDidMount() {
+		window.addEventListener('resize', this.resize);
+		this.resize();
 
 		const params = new URLSearchParams(document.location.search.substring(1));
 		const program = params.get('program');
@@ -31,10 +36,6 @@ export default class Projects extends React.Component {
 			this.state.program = program;
 			this.state.projects = this.filterByProgram(this.state.projects);
 		}
-	}
-
-	componentDidMount() {
-		window.addEventListener('resize', this.resize);
 	}
 
 	filterByProgram = (projects, program = this.state.program) =>
@@ -113,7 +114,7 @@ export default class Projects extends React.Component {
 						<h2>Personal Projects</h2>
 					</div>
 					<div className={styles.content}>
-						{this.state.width > 1100 && (
+						{this.state.width && this.state.width > 1100 && (
 							<div className={styles.navBar}>
 								<h3>Filter by program</h3>
 								<div className={styles.indent}>
