@@ -19,12 +19,14 @@ $navh: 15vh;
 %header {
 	font-family: $roboto;
 	font-size: 60px;
+	line-height: 60px;
 }
 
 %subtitle {
 	margin-top: 3vh;
 	font-family: $roboto;
 	font-size: 30px;
+	line-height: 35px;
 }
 
 %container {
@@ -42,6 +44,7 @@ $navh: 15vh;
 		@extend %subtitle;
 
 		font-size: 40px;
+		line-height: 40px;
 	}
 
 	h4 {

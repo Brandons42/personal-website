@@ -15,8 +15,8 @@ const HogContest = props => (
 		{...props}
 		desc={
 			<p>
-				This is my submission for UC Berkeley CS 61A's contest to create the
-				best algorithm to play a dice-rolling game against other students'
+				My submission for UC Berkeley CS 61A's contest to create the best
+				algorithm to play a dice-rolling game against other students'
 				algorithms.
 			</p>
 		}

@@ -49,6 +49,14 @@ $resumeWidth: 62vh;
 	margin-top: 1.5vh;
 }
 
+.featured {
+	@extend %white;
+
+	& > div {
+		margin-left: -10vw;
+	}
+}
+
 .gradient {
 	background: linear-gradient(to right, $semitparent, $tparent);
 	height: $fixh;

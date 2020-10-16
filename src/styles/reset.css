@@ -116,3 +116,7 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+#__gatsby {
+	overflow-x: hidden;
+	width: 100vw;
+}

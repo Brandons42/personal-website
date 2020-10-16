@@ -123,7 +123,7 @@ export default class Home extends React.Component {
 							</div>
 						</div>
 					</div>
-					<div className={styles.white}>
+					<div className={styles.featured}>
 						<h2>Featured Projects</h2>
 						<QuizWatch onClickTag={() => {}} selectedTags={[]} />
 						<WordSprint onClickTag={() => {}} selectedTags={[]} />
