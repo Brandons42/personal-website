@@ -76,10 +76,10 @@ export default class Home extends React.Component {
 							<p>
 								I'm a programmer forever driven by a passion to build and learn
 								new things. I've built many websites and published apps on the
-								iOS App Store, and I'm currently study at the University of
-								California, Berkeley. I have lots of experience If you'd like me
-								to build you an app or website or you'd like to get in touch for
-								another reason, feel free to connect with me on LinkedIn or{' '}
+								iOS App Store, and I'm currently studying at the University of
+								California, Berkeley. If you'd like me to build you an app or
+								website or you'd like to get in touch for another reason, feel
+								free to connect with me on LinkedIn or{' '}
 								<a href='#contact'>contact me below</a>.
 							</p>
 						</div>
