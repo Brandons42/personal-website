@@ -18,7 +18,11 @@ const Google = props => (
 			<p>
 				Hosted on Github Pages, this is a recreation of Google's homepage(in
 				2017) built for{' '}
-				<a href='https://www.theodinproject.com/' target='_blank'>
+				<a
+					href='https://www.theodinproject.com/'
+					rel='noopener noreferrer'
+					target='_blank'
+				>
 					The Odin Project's
 				</a>{' '}
 				curriculum.

@@ -18,7 +18,11 @@ const Experiences = () => (
 			<Certificate img={cssi} />
 			<h3>Full-Stack Developer Intern at Reputationaire</h3>
 
-			<a href='https://confirm.udacity.com/GNEDA6YE' target='_blank'>
+			<a
+				href='https://confirm.udacity.com/GNEDA6YE'
+				rel='noopener noreferrer'
+				target='_blank'
+			>
 				<h3>Udacity Deep Reinforcement Learning Nanodegree</h3>
 			</a>
 

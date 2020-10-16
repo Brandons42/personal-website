@@ -7,7 +7,7 @@ import styles from '../styles/college.module.scss';
 
 const CourseLink = ({ children, href }) => (
 	<p>
-		<a href={href} target='_blank'>
+		<a href={href} rel='noopener noreferrer' target='_blank'>
 			{children}
 		</a>
 	</p>

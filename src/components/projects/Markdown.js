@@ -25,7 +25,11 @@ const Markdown = props => (
 		desc={
 			<p>
 				Hosted on Github Pages, this is a Markdown previewer built for the{' '}
-				<a href='https://www.freecodecamp.org' target='_blank'>
+				<a
+					href='https://www.freecodecamp.org'
+					rel='noopener noreferrer'
+					target='_blank'
+				>
 					freeCodeCamp
 				</a>{' '}
 				curriculum.

@@ -20,7 +20,11 @@ const WordExistsDocs = props => (
 		desc={
 			<p>
 				Documentation web page for the Word Exists NPM package, built for the{' '}
-				<a href='https://www.freecodecamp.org' target='_blank'>
+				<a
+					href='https://www.freecodecamp.org'
+					rel='noopener noreferrer'
+					target='_blank'
+				>
 					freeCodeCamp
 				</a>{' '}
 				curriculum.

@@ -27,7 +27,11 @@ const Calculator = props => (
 			<p>
 				Hosted on Github Pages, this is a simple calculator that obeys the order
 				of operations built for the{' '}
-				<a href='https://www.freecodecamp.org' target='_blank'>
+				<a
+					href='https://www.freecodecamp.org'
+					rel='noopener noreferrer'
+					target='_blank'
+				>
 					freeCodeCamp
 				</a>{' '}
 				curriculum.
