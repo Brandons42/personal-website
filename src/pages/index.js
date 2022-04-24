@@ -133,12 +133,6 @@ export default class Home extends React.Component {
 						</Link>
 					</div>
 				</div>
-				<script
-					type='text/javascript'
-					src='https://platform.linkedin.com/badges/js/profile.js'
-					async
-					defer
-				></script>
 			</Layout>
 		);
 	}
