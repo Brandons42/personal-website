@@ -109,7 +109,7 @@ export default class Home extends React.Component {
 									</ResumeLink>
 								</div>
 								<p className={styles.resumeLinks}>
-									<ResumeLink>Download*</ResumeLink>
+									<ResumeLink>Download</ResumeLink>
 									{'   |   '}
 									<a
 										href={resumeHref}
@@ -119,7 +119,6 @@ export default class Home extends React.Component {
 										Open in new tab
 									</a>
 								</p>
-								<p className={styles.small}>*Not supported in all browsers</p>
 							</div>
 						</div>
 					</div>
