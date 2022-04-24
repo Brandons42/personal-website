@@ -70,42 +70,43 @@ $resumeWidth: 62vmin;
 	width: 35vmin;
 }
 
-.overlay {
-	background-color: black;
-	height: $resumeHeight;
-	margin-bottom: -$resumeHeight;
-	position: relative;
-	top: -$resumeHeight;
-	width: $resumeWidth;
-}
-
 .resume {
 	height: $resumeHeight;
 	width: $resumeWidth;
 }
 
 .resumeContainer {
+	box-shadow: 0 0 15px 5px $blue;
+	height: $resumeHeight;
+	position: relative;
+
+
+	&::after {
+		content: "";
+		background-color: black;
+		height: $resumeHeight;
+		left: 0;
+		opacity: 0;
+		pointer-events: none;
+		position: absolute;
+		width: $resumeWidth;
+		top: 0;
+	}
+
+	&:hover::after {
+		opacity: 0.2;
+	}
+}
+
+.resumeLinks {
+	margin: 20px 0 2px;
+}
+
+.resumeSectionContainer {
 	align-items: center;
 	display: flex;
 	flex-direction: column;
 	width: 100%;
-}
-
-.resumeFiller {
-	height: $resumeHeight;
-	overflow-y: hidden;
-}
-
-/*.resumeLink {
-	bottom: 0;
-	left: 0;
-	position: relative;
-	right: 0;
-	top: 0;
-}*/
-
-.resumeLinks {
-	margin: 20px 0 2px;
 }
 
 .title {
