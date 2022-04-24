@@ -58,7 +58,7 @@ export default class Home extends React.Component {
 							backgroundColor={`#040e18`}
 							className={styles.banner}
 							fluid={data.desktop.childImageSharp.fluid}
-							style={{ position: 'fixed' }}
+							style={{ backgroundPosition: '70% 0%', position: 'fixed' }}
 						>
 							<div className={styles.titleContainer}>
 								<h1 className={styles.title}>Brandon Suen</h1>

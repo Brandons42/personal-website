@@ -5,13 +5,8 @@ $resumeHeight: 80vmin;
 $resumeWidth: 62vmin;
 
 .banner {
-	background-position: 70% 0%;
-	background-position-x: 70%;
-	background-position-y: 0%;
-	background-size: cover;
 	display: flex;
 	height: $fixh;
-	position: fixed;
 	width: 100vw;
 	z-index: -1;
 }
