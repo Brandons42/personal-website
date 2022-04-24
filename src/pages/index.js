@@ -62,7 +62,7 @@ export default class Home extends React.Component {
 						>
 							<div className={styles.titleContainer}>
 								<h1 className={styles.title}>Brandon Suen</h1>
-								<h3 className={styles.desc}>Software Developer</h3>
+								<h3 className={styles.desc}>Software Engineer,</h3>
 								<h3 className={styles.desc}>Student at UC Berkeley</h3>
 							</div>
 							<div className={styles.gradient} />
