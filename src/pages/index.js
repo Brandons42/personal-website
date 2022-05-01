@@ -3,10 +3,11 @@ import { graphql, Link, StaticQuery } from 'gatsby';
 import BackgroundImage from 'gatsby-background-image';
 
 import Layout from '../components/Layout';
-import LinkedIn from '../components/LinkedIn';
 import QuizWatch from '../components/projects/QuizWatch';
 import Tennis from '../components/projects/Tennis';
 import WordSprint from '../components/projects/WordSprint';
+import github from '../images/github.png';
+import linkedin from '../images/linkedin.png';
 import resume from '../images/resume.png';
 import styles from '../styles/index.module.scss';
 
@@ -62,7 +63,10 @@ const Home = () => (
 						me on LinkedIn or <a href='#contact'>contact me below</a>.
 					</p>
 				</div>
-				<LinkedIn />
+				<div className={styles.logos}>
+					<img alt='LinkedIn logo' src={linkedin} />
+					<img alt='Github logo' src={github} />
+				</div>
 			</div>
 			<div className={styles.white}>
 				<div>

@@ -12,7 +12,7 @@ $resumeWidth: 62vmin;
 }
 
 .bio {
-	@extend %blue;
+	@extend %white;
 
 	align-items: center;
 	display: flex;
@@ -64,10 +64,13 @@ $resumeWidth: 62vmin;
 	width: 10vw;
 }
 
-.logo {
-	display: block;
-	margin: 0 auto;
-	width: 35vmin;
+.logos {
+	display: flex;
+	flex-direction: column;
+
+	img {
+		width: 60px;
+	}
 }
 
 .resume {
