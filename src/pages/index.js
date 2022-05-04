@@ -64,8 +64,15 @@ const Home = () => (
 					</p>
 				</div>
 				<div className={styles.logos}>
-					<img alt='LinkedIn logo' src={linkedin} />
-					<img alt='Github logo' src={github} />
+					<a
+						href='https://www.linkedin.com/in/brandon-suen-8ba1b3187/'
+						target='_blank'
+					>
+						<img alt='LinkedIn logo' src={linkedin} />
+					</a>
+					<a href='https://github.com/Brandons42' target='_blank'>
+						<img alt='Github logo' src={github} />
+					</a>
 				</div>
 			</div>
 			<div className={styles.white}>
